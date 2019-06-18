@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lectoratitle lectorafileversion="18.1" lectoraproductversion="18.1.2" lectoraproductname="Lectora Inspire" lectoraproductcode="LD">
+<titledata titletype="aicc" hasmuteaction="true" savedfromdemo="true">
+<currentid>122162</currentid>
+<currtheme></currtheme>
+<language>en</language>
+<ribbonpasteoption>6646</ribbonpasteoption>
+<logpixelsx>96</logpixelsx>
+<logpixelsy>96</logpixelsy>
+</titledata>
+<resourcedata>
+<resource id="389" resourcetype="image">
+<name>icn_devider.png</name>
+<relativelink>images\icn_devider.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="468" resourcetype="image">
+<name>fc_logo.png</name>
+<relativelink>images\fc_logo.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="561" resourcetype="image">
+<name>btn_back_normal.png</name>
+<relativelink>images\btn_back_normal.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="562" resourcetype="image">
+<name>btn_back_hover.png</name>
+<relativelink>images\btn_back_hover.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="1299" resourcetype="image">
+<name>btn_next_normal.png</name>
+<relativelink>images\btn_next_normal.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="1308" resourcetype="image">
+<name>btn_next_hover.png</name>
+<relativelink>images\btn_next_hover.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="1869" resourcetype="image">
+<name>btn_mute_normal.png</name>
+<relativelink>images\btn_mute_normal.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="1878" resourcetype="image">
+<name>btn_mute_hover.png</name>
+<relativelink>images\btn_mute_hover.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="2108" resourcetype="image">
+<name>btn_sound_normal.png</name>
+<relativelink>images\btn_sound_normal.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="2117" resourcetype="image">
+<name>btn_sound_hover.png</name>
+<relativelink>images\btn_sound_hover.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="26208" resourcetype="image">
+<name>btn_radio_selected.png</name>
+<relativelink>images\btn_radio_selected.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="26209" resourcetype="image">
+<name>btn_radio_normal.png</name>
+<relativelink>images\btn_radio_normal.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="31289" resourcetype="video">
+<name>lectora_514x324.mp4</name>
+<relativelink>media\lectora_514x324.mp4</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000008</resourceflags>
+</resource>
+<resource id="91442" resourcetype="image">
+<name>Checkbox_checked.png</name>
+<relativelink>images\Checkbox_checked.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="91443" resourcetype="image">
+<name>Checkbox_unchecked.png</name>
+<relativelink>images\Checkbox_unchecked.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="102143" resourcetype="audio">
+<name>silence.mp3</name>
+<relativelink>media\silence.mp3</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="108199" resourcetype="image">
+<name>DragAndDropFolders.png</name>
+<relativelink>images\DragAndDropFolders.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="110755" resourcetype="image">
+<name>3_text_image.jpg</name>
+<relativelink>images\3_text_image.jpg</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="110759" resourcetype="image">
+<name>certificate6.jpg</name>
+<relativelink>images\certificate6.jpg</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="110855" resourcetype="image">
+<name>ST_title_1009x607.png</name>
+<relativelink>images\ST_title_1009x607.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="110856" resourcetype="image">
+<name>ST_chapter_515x607.png</name>
+<relativelink>images\ST_chapter_515x607.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="110857" resourcetype="image">
+<name>ST_hotspot_1009x607.png</name>
+<relativelink>images\ST_hotspot_1009x607.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="111245" resourcetype="image">
+<name>icn_printer_normal.png</name>
+<relativelink>images\icn_printer_normal.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="111246" resourcetype="image">
+<name>icn_printer_hover.png</name>
+<relativelink>images\icn_printer_hover.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="121862" resourcetype="animation">
+<name>story.swf</name>
+<relativelink>images\story.swf</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+</resourcedata>
+<variabledata>
+<variable id="30965">
+<name>TriMuteAllFLV</name>
+<initialvalue></initialvalue>
+<lastupdated>0</lastupdated>
+<varnotvisible>1</varnotvisible>
+<reserved_variable />
+</variable>
+<variable id="89025">
+<name>sound_enabled</name>
+<initialvalue>1</initialvalue>
+<lastupdated>0</lastupdated>
+</variable>
+</variabledata>
+<objectdefaults />
+<objectdata>
+<title id="1" center="center" respdesign="true">
+<name>Storyline to Lectora</name>
+<lastupdated>1539698433</lastupdated>
+<respprops>
+<phoneportrait>
+<title pubthisview="true" />
+</phoneportrait>
+<tabletlandscape>
+<title pubthisview="true">
+<height>562</height>
+</title>
+</tabletlandscape>
+<phonelandscape>
+<title pubthisview="true" />
+</phonelandscape>
+<tabletportrait>
+<title pubthisview="true">
+<height>453</height>
+</title>
+</tabletportrait>
+</respprops>
+<bgcolor>FFFAF5</bgcolor>
+<textcolor>000000</textcolor>
+<linkcolor>0000FF</linkcolor>
+<width>1009</width>
+<height>662</height>
+<font>
+<height>12</height>
+<facename>Arial</facename>
+</font>
+<custformelement formelemtype="radiobutton">
+<onimage customid="26208" />
+<offimage customid="26209" />
+</custformelement>
+<custformelement formelemtype="checkbox">
+<onimage customid="91442" />
+<offimage customid="91443" />
+</custformelement>
+<animimage id="121860" parent="1" resource="121862" ontop="false" fixed="false" proportional="false">
+<name>story</name>
+<lastupdated>1559927716</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>1007</cx>
+<cy>663</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+</animimage>
+<assignableunit id="67" parent="1" timelimitaction="continuenomessage" prereqtype="all">
+<name>A001</name>
+<lastupdated>1559928986</lastupdated>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+<effect>0</effect>
+</transitionin>
+<autype>Lesson</autype>
+<masteryscore>75</masteryscore>
+<developerid>A001-Dev</developerid>
+<description>Description of Assignable Unit</description>
+<systemid>A001</systemid>
+<systemidint>1</systemidint>
+<cmi5moveon>0</cmi5moveon>
+<action id="89144" parent="67" on="show">
+<name>OnShowMute_or_Unmute_media</name>
+<lastupdated>1537455954</lastupdated>
+<actionitem actiontaken="muteFLVmedia" subtargetobject="30965">
+<conditionlist all_of_the_conditions="true">
+<condition varcondition="89025" comparecondition="equal">
+<stringcomparison>0</stringcomparison>
+</condition>
+</conditionlist>
+<browserWnd />
+</actionitem>
+<elseactionitem actiontaken="unmuteFLVmedia" subtargetobject="30965">
+<browserWnd />
+</elseactionitem>
+</action>
+<action id="89339" parent="67" on="show">
+<name>OnShowShow_soundOn_or_soundOff</name>
+<lastupdated>1537456013</lastupdated>
+<actionitem actiontaken="show" target="object" targetobject="2012">
+<conditionlist all_of_the_conditions="true">
+<condition varcondition="89025" comparecondition="equal">
+<stringcomparison>1</stringcomparison>
+</condition>
+</conditionlist>
+<browserWnd />
+</actionitem>
+<elseactionitem actiontaken="show" target="object" targetobject="1733">
+<browserWnd />
+</elseactionitem>
+</action>
+<objgroup id="2596" parent="67" ontop="true">
+<name>Header</name>
+<lastupdated>1539612892</lastupdated>
+<shape id="164" parent="2596" ontop="true" fixed="true" locked="true" proportional="false">
+<name>Header_Background</name>
+<lastupdated>1540391429</lastupdated>
+<respprops>
+<phoneportrait>
+<shape>
+<possize>
+<size>
+<cx>480</cx>
+<cy>55</cy>
+</size>
+</possize>
+</shape>
+</phoneportrait>
+<phonelandscape>
+<shape>
+<possize>
+<size>
+<cx>785</cx>
+<cy>55</cy>
+</size>
+</possize>
+</shape>
+</phonelandscape>
+<tabletportrait>
+<shape>
+<possize>
+<size>
+<cx>785</cx>
+<cy>55</cy>
+</size>
+</possize>
+</shape>
+</tabletportrait>
+</respprops>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>1009</cx>
+<cy>55</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<shadoweffect>
+<dir>0</dir>
+<depth>0</depth>
+<opacity>0.300000</opacity>
+<color>000000</color>
+<blurradius>6.000000</blurradius>
+<shadowtype>2</shadowtype>
+</shadoweffect>
+<autosize>0</autosize>
+<type>20000</type>
+<linestyle>0</linestyle>
+<strokewidth>1</strokewidth>
+<strokecolor>FFFFFF</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="1" gradientangle="315" bevelheight="0" color="FFFFFF" />
+</shape>
+<image id="387" parent="2596" resource="389" ontop="true" fixed="true" locked="true" proportional="true" posfromright="true">
+<name>icn_devider</name>
+<lastupdated>1539612892</lastupdated>
+<respprops>
+<phoneportrait>
+<image>
+<possize>
+<size>
+<cx>30</cx>
+<cy>38</cy>
+</size>
+<point>
+<x>169</x>
+<y>10</y>
+</point>
+</possize>
+</image>
+</phoneportrait>
+<phonelandscape>
+<image>
+<possize>
+<size>
+<cx>30</cx>
+<cy>38</cy>
+</size>
+<point>
+<x>167</x>
+<y>10</y>
+</point>
+</possize>
+</image>
+</phonelandscape>
+<tabletportrait>
+<image>
+<possize>
+<size>
+<cx>30</cx>
+<cy>38</cy>
+</size>
+<point>
+<x>168</x>
+<y>10</y>
+</point>
+</possize>
+</image>
+</tabletportrait>
+</respprops>
+<possize>
+<point>
+<x>176</x>
+<y>9</y>
+</point>
+<size>
+<cx>30</cx>
+<cy>38</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+</image>
+<image id="466" parent="2596" resource="468" ontop="true" fixed="true" locked="true" proportional="true">
+<name>fc_logo</name>
+<lastupdated>1539612892</lastupdated>
+<respprops>
+<phoneportrait>
+<image>
+<possize>
+<size>
+<cx>139</cx>
+<cy>34</cy>
+</size>
+<point>
+<x>30</x>
+<y>13</y>
+</point>
+</possize>
+</image>
+</phoneportrait>
+<phonelandscape>
+<image>
+<possize>
+<size>
+<cx>139</cx>
+<cy>34</cy>
+</size>
+<point>
+<x>30</x>
+<y>13</y>
+</point>
+</possize>
+</image>
+</phonelandscape>
+<tabletportrait>
+<image>
+<possize>
+<size>
+<cx>139</cx>
+<cy>34</cy>
+</size>
+</possize>
+</image>
+</tabletportrait>
+</respprops>
+<possize>
+<point>
+<x>30</x>
+<y>13</y>
+</point>
+<size>
+<cx>139</cx>
+<cy>34</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<action id="96258" parent="466" on="mouseclick">
+<name>OnMClkGoTo_first_page</name>
+<lastupdated>1537518505</lastupdated>
+<actionitem actiontaken="goto" target="firstpage">
+<browserWnd />
+</actionitem>
+</action>
+</image>
+<textbutton id="563" parent="2596" resource="561" ontop="true" fixed="true" locked="true" proportional="true" posfromright="true" initdisabled="false">
+<name>Button_Back</name>
+<lastupdated>1539612892</lastupdated>
+<respprops>
+<phoneportrait>
+<textbutton>
+<possize>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+<point>
+<x>123</x>
+<y>8</y>
+</point>
+</possize>
+</textbutton>
+</phoneportrait>
+<phonelandscape>
+<textbutton>
+<possize>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+<point>
+<x>122</x>
+<y>8</y>
+</point>
+</possize>
+</textbutton>
+</phonelandscape>
+<tabletportrait>
+<textbutton>
+<possize>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+<point>
+<x>123</x>
+<y>8</y>
+</point>
+</possize>
+</textbutton>
+</tabletportrait>
+</respprops>
+<possize>
+<point>
+<x>131</x>
+<y>8</y>
+</point>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<autosize>0</autosize>
+<type>20000</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+<action id="104169" parent="563" on="page show">
+<name>OnPageShowSetState_disable</name>
+<lastupdated>1538015702</lastupdated>
+<actionitem actiontaken="setstate" target="thisobj" state="disabled">
+<conditionlist all_of_the_conditions="true">
+<condition varcondition="-258" comparecondition="equal">
+<stringcomparison>1</stringcomparison>
+</condition>
+</conditionlist>
+<browserWnd />
+</actionitem>
+<elseactionitem actiontaken="none">
+<browserWnd />
+</elseactionitem>
+</action>
+<action id="568" parent="563" on="mouseclick">
+<name>OnMClkGoTo_previous_page</name>
+<lastupdated>1537365594</lastupdated>
+<actionitem actiontaken="goto" target="prevpage">
+<browserWnd />
+</actionitem>
+</action>
+<type>20000</type>
+<overstate resource="562" ontop="false" fixed="false" proportional="true">
+<name></name>
+<lastupdated>0</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>-1</cx>
+<cy>-1</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<autosize>0</autosize>
+<type>0</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+</overstate>
+<downstate resource="561" ontop="false" fixed="false" proportional="true">
+<name></name>
+<lastupdated>0</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>-1</cx>
+<cy>-1</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<autosize>0</autosize>
+<type>0</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+</downstate>
+<disabledstate resource="561" ontop="false" fixed="false" proportional="true">
+<name></name>
+<lastupdated>0</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>-1</cx>
+<cy>-1</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>20</opacity>
+<autosize>0</autosize>
+<type>0</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+</disabledstate>
+</textbutton>
+<textbutton id="1166" parent="2596" resource="1299" ontop="true" fixed="true" locked="true" proportional="true" posfromright="true" initdisabled="false">
+<name>Button_Next</name>
+<lastupdated>1539612892</lastupdated>
+<respprops>
+<phoneportrait>
+<textbutton>
+<possize>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+<point>
+<x>69</x>
+<y>8</y>
+</point>
+</possize>
+</textbutton>
+</phoneportrait>
+<phonelandscape>
+<textbutton>
+<possize>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+<point>
+<x>68</x>
+<y>8</y>
+</point>
+</possize>
+</textbutton>
+</phonelandscape>
+<tabletportrait>
+<textbutton>
+<possize>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+<point>
+<x>69</x>
+<y>8</y>
+</point>
+</possize>
+</textbutton>
+</tabletportrait>
+</respprops>
+<possize>
+<point>
+<x>77</x>
+<y>8</y>
+</point>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<autosize>0</autosize>
+<type>20000</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+<action id="104190" parent="1166" on="page show">
+<name>OnPageShowSetState_disable</name>
+<lastupdated>1538015726</lastupdated>
+<actionitem actiontaken="setstate" target="thisobj" state="disabled">
+<conditionlist all_of_the_conditions="true">
+<condition varcondition="-258" varcomparison="-259" comparecondition="equal" />
+</conditionlist>
+<browserWnd />
+</actionitem>
+<elseactionitem actiontaken="none">
+<browserWnd />
+</elseactionitem>
+</action>
+<action id="1167" parent="1166" on="mouseclick">
+<name>OnMClkGoTo_next_page</name>
+<lastupdated>1537365576</lastupdated>
+<actionitem actiontaken="goto" target="nextpage">
+<browserWnd />
+</actionitem>
+</action>
+<type>20000</type>
+<overstate resource="1308" ontop="false" fixed="false" proportional="true">
+<name></name>
+<lastupdated>0</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>-1</cx>
+<cy>-1</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<autosize>0</autosize>
+<type>0</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+</overstate>
+<downstate resource="1299" ontop="false" fixed="false" proportional="true">
+<name></name>
+<lastupdated>0</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>-1</cx>
+<cy>-1</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<autosize>0</autosize>
+<type>0</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+</downstate>
+<disabledstate resource="1299" ontop="false" fixed="false" proportional="true">
+<name></name>
+<lastupdated>0</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>-1</cx>
+<cy>-1</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>20</opacity>
+<autosize>0</autosize>
+<type>0</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+</disabledstate>
+</textbutton>
+<textbutton id="1733" parent="2596" resource="1869" visible="false" ontop="true" fixed="true" locked="true" proportional="true" posfromright="true" initdisabled="false">
+<name>Button_SoundOn</name>
+<lastupdated>1539612892</lastupdated>
+<respprops>
+<phoneportrait>
+<textbutton>
+<possize>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+<point>
+<x>231</x>
+<y>8</y>
+</point>
+</possize>
+</textbutton>
+</phoneportrait>
+<phonelandscape>
+<textbutton>
+<possize>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+<point>
+<x>230</x>
+<y>8</y>
+</point>
+</possize>
+</textbutton>
+</phonelandscape>
+<tabletportrait>
+<textbutton>
+<possize>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+<point>
+<x>231</x>
+<y>8</y>
+</point>
+</possize>
+</textbutton>
+</tabletportrait>
+</respprops>
+<possize>
+<point>
+<x>237</x>
+<y>8</y>
+</point>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<autosize>0</autosize>
+<type>20000</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+<action id="89124" parent="1733" on="mouseclick">
+<name>OnMClkModVar_sound_enabled_1</name>
+<lastupdated>1537455824</lastupdated>
+<actionitem actiontaken="modifyvariable" target="variable" targetvariable="89025" modvariable="set">
+<targetstring>1</targetstring>
+<browserWnd />
+</actionitem>
+</action>
+<action id="1734" parent="1733" on="mouseclick">
+<name>OnMClkUnmuteMed</name>
+<lastupdated>1537365547</lastupdated>
+<actionitem actiontaken="unmuteFLVmedia" subtargetobject="30965">
+<browserWnd />
+</actionitem>
+</action>
+<action id="89302" parent="1733" on="mouseclick">
+<name>OnMClkHide_this</name>
+<lastupdated>1537455965</lastupdated>
+<actionitem actiontaken="hide" target="thisobj">
+<browserWnd />
+</actionitem>
+</action>
+<action id="89358" parent="1733" on="mouseclick">
+<name>OnMClkShow_sound_off</name>
+<lastupdated>1537455982</lastupdated>
+<actionitem actiontaken="show" target="object" targetobject="2012">
+<browserWnd />
+</actionitem>
+</action>
+<type>20000</type>
+<overstate resource="1878" ontop="false" fixed="false" proportional="true">
+<name></name>
+<lastupdated>0</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>-1</cx>
+<cy>-1</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<autosize>0</autosize>
+<type>0</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+</overstate>
+<downstate resource="1869" ontop="false" fixed="false" proportional="true">
+<name></name>
+<lastupdated>0</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>-1</cx>
+<cy>-1</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<autosize>0</autosize>
+<type>0</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+</downstate>
+<disabledstate resource="1869" ontop="false" fixed="false" proportional="true">
+<name></name>
+<lastupdated>0</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>-1</cx>
+<cy>-1</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>60</opacity>
+<autosize>0</autosize>
+<type>0</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+</disabledstate>
+</textbutton>
+<textbutton id="2012" parent="2596" resource="2108" visible="false" ontop="true" fixed="true" locked="true" proportional="true" posfromright="true" initdisabled="false">
+<name>Button_SoundOff</name>
+<lastupdated>1539612892</lastupdated>
+<respprops>
+<phoneportrait>
+<textbutton>
+<possize>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+<point>
+<x>231</x>
+<y>8</y>
+</point>
+</possize>
+</textbutton>
+</phoneportrait>
+<phonelandscape>
+<textbutton>
+<possize>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+<point>
+<x>230</x>
+<y>8</y>
+</point>
+</possize>
+</textbutton>
+</phonelandscape>
+<tabletportrait>
+<textbutton>
+<possize>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+<point>
+<x>231</x>
+<y>8</y>
+</point>
+</possize>
+</textbutton>
+</tabletportrait>
+</respprops>
+<possize>
+<point>
+<x>237</x>
+<y>8</y>
+</point>
+<size>
+<cx>40</cx>
+<cy>40</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<autosize>0</autosize>
+<type>20000</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+<action id="89102" parent="2012" on="mouseclick">
+<name>OnMClkModVar_sound_enabled_0</name>
+<lastupdated>1537455700</lastupdated>
+<actionitem actiontaken="modifyvariable" target="variable" targetvariable="89025" modvariable="set">
+<targetstring>0</targetstring>
+<browserWnd />
+</actionitem>
+</action>
+<action id="2013" parent="2012" on="mouseclick">
+<name>OnMClkMuteMed</name>
+<lastupdated>1537365535</lastupdated>
+<actionitem actiontaken="muteFLVmedia" subtargetobject="30965">
+<browserWnd />
+</actionitem>
+</action>
+<action id="89354" parent="2012" on="mouseclick">
+<name>OnMClkHide_this</name>
+<lastupdated>1537455967</lastupdated>
+<actionitem actiontaken="hide" target="thisobj">
+<browserWnd />
+</actionitem>
+</action>
+<action id="89364" parent="2012" on="mouseclick">
+<name>OnMClkShow_sound_on</name>
+<lastupdated>1537455987</lastupdated>
+<actionitem actiontaken="show" target="object" targetobject="1733">
+<browserWnd />
+</actionitem>
+</action>
+<type>20000</type>
+<overstate resource="2117" ontop="false" fixed="false" proportional="true">
+<name></name>
+<lastupdated>0</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>-1</cx>
+<cy>-1</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<autosize>0</autosize>
+<type>0</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+</overstate>
+<downstate resource="2108" ontop="false" fixed="false" proportional="true">
+<name></name>
+<lastupdated>0</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>-1</cx>
+<cy>-1</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<autosize>0</autosize>
+<type>0</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+</downstate>
+<disabledstate resource="2108" ontop="false" fixed="false" proportional="true">
+<name></name>
+<lastupdated>0</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>-1</cx>
+<cy>-1</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>60</opacity>
+<autosize>0</autosize>
+<type>0</type>
+<linestyle>0</linestyle>
+<strokewidth>0</strokewidth>
+<strokecolor>0963B1</strokecolor>
+<text></text>
+<textcolor>FFFFFF</textcolor>
+<fontsize>-16</fontsize>
+<fontheight>12</fontheight>
+<fontstyle>0</fontstyle>
+<textalignment>1</textalignment>
+<fontfamily>Lucida Sans Unicode</fontfamily>
+<handledata />
+<shapefillinfo fillstyle="17" gradientangle="270" bevelheight="0" color="transparent" />
+</disabledstate>
+</textbutton>
+</objgroup>
+<chapter id="148" parent="67">
+<name>INTRO</name>
+<lastupdated>1559927744</lastupdated>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+<effect>0</effect>
+</transitionin>
+<page id="104266" parent="148">
+<name>COURSE INTRO</name>
+<lastupdated>1559927785</lastupdated>
+<respprops>
+<phoneportrait>
+<page>
+<height>560</height>
+</page>
+</phoneportrait>
+<tabletlandscape>
+<page>
+<height>662</height>
+</page>
+</tabletlandscape>
+<phonelandscape>
+<page>
+<height>527</height>
+</page>
+</phonelandscape>
+<tabletportrait>
+<page>
+<height>527</height>
+</page>
+</tabletportrait>
+</respprops>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+<effect>0</effect>
+</transitionin>
+<animimage id="122129" parent="104266" resource="121862" ontop="false" fixed="false" proportional="false">
+<name>story</name>
+<lastupdated>1559927803</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>51</y>
+</point>
+<size>
+<cx>1009</cx>
+<cy>622</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+</animimage>
+</page>
+</chapter>
+</assignableunit>
+</title>
+</objectdata>
+</lectoratitle>

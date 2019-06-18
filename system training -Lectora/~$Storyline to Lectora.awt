@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lectoratitle lectorafileversion="18.1" lectoraproductversion="18.1.2" lectoraproductname="Lectora Inspire" lectoraproductcode="LD">
+<titledata titletype="aicc" hasmuteaction="true" savedfromdemo="true">
+<currentid>122353</currentid>
+<currtheme></currtheme>
+<language>en</language>
+<ribbonpasteoption>6646</ribbonpasteoption>
+<logpixelsx>96</logpixelsx>
+<logpixelsy>96</logpixelsy>
+</titledata>
+<resourcedata>
+<resource id="389" resourcetype="image">
+<name>icn_devider.png</name>
+<relativelink>images\icn_devider.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="468" resourcetype="image">
+<name>fc_logo.png</name>
+<relativelink>images\fc_logo.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="561" resourcetype="image">
+<name>btn_back_normal.png</name>
+<relativelink>images\btn_back_normal.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="562" resourcetype="image">
+<name>btn_back_hover.png</name>
+<relativelink>images\btn_back_hover.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="1299" resourcetype="image">
+<name>btn_next_normal.png</name>
+<relativelink>images\btn_next_normal.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="1308" resourcetype="image">
+<name>btn_next_hover.png</name>
+<relativelink>images\btn_next_hover.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="1869" resourcetype="image">
+<name>btn_mute_normal.png</name>
+<relativelink>images\btn_mute_normal.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="1878" resourcetype="image">
+<name>btn_mute_hover.png</name>
+<relativelink>images\btn_mute_hover.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="2108" resourcetype="image">
+<name>btn_sound_normal.png</name>
+<relativelink>images\btn_sound_normal.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="2117" resourcetype="image">
+<name>btn_sound_hover.png</name>
+<relativelink>images\btn_sound_hover.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="26208" resourcetype="image">
+<name>btn_radio_selected.png</name>
+<relativelink>images\btn_radio_selected.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="26209" resourcetype="image">
+<name>btn_radio_normal.png</name>
+<relativelink>images\btn_radio_normal.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="31289" resourcetype="video">
+<name>lectora_514x324.mp4</name>
+<relativelink>media\lectora_514x324.mp4</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000008</resourceflags>
+</resource>
+<resource id="91442" resourcetype="image">
+<name>Checkbox_checked.png</name>
+<relativelink>images\Checkbox_checked.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="91443" resourcetype="image">
+<name>Checkbox_unchecked.png</name>
+<relativelink>images\Checkbox_unchecked.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="102143" resourcetype="audio">
+<name>silence.mp3</name>
+<relativelink>media\silence.mp3</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="108199" resourcetype="image">
+<name>DragAndDropFolders.png</name>
+<relativelink>images\DragAndDropFolders.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="110755" resourcetype="image">
+<name>3_text_image.jpg</name>
+<relativelink>images\3_text_image.jpg</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="110759" resourcetype="image">
+<name>certificate6.jpg</name>
+<relativelink>images\certificate6.jpg</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="110855" resourcetype="image">
+<name>ST_title_1009x607.png</name>
+<relativelink>images\ST_title_1009x607.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="110856" resourcetype="image">
+<name>ST_chapter_515x607.png</name>
+<relativelink>images\ST_chapter_515x607.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="110857" resourcetype="image">
+<name>ST_hotspot_1009x607.png</name>
+<relativelink>images\ST_hotspot_1009x607.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="111245" resourcetype="image">
+<name>icn_printer_normal.png</name>
+<relativelink>images\icn_printer_normal.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="111246" resourcetype="image">
+<name>icn_printer_hover.png</name>
+<relativelink>images\icn_printer_hover.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="121862" resourcetype="animation">
+<name>story.swf</name>
+<relativelink>images\story.swf</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+</resourcedata>
+<variabledata>
+<variable id="30965">
+<name>TriMuteAllFLV</name>
+<initialvalue></initialvalue>
+<lastupdated>0</lastupdated>
+<varnotvisible>1</varnotvisible>
+<reserved_variable />
+</variable>
+<variable id="89025">
+<name>sound_enabled</name>
+<initialvalue>1</initialvalue>
+<lastupdated>0</lastupdated>
+</variable>
+</variabledata>
+<objectdefaults />
+<objectdata>
+<title id="1" center="center" respdesign="true">
+<name>Storyline to Lectora</name>
+<lastupdated>1560839277</lastupdated>
+<respprops>
+<phoneportrait>
+<title pubthisview="true" />
+</phoneportrait>
+<tabletlandscape>
+<title pubthisview="true">
+<height>562</height>
+</title>
+</tabletlandscape>
+<phonelandscape>
+<title pubthisview="true" />
+</phonelandscape>
+<tabletportrait>
+<title pubthisview="true">
+<height>453</height>
+</title>
+</tabletportrait>
+</respprops>
+<bgcolor>FFFAF5</bgcolor>
+<textcolor>000000</textcolor>
+<linkcolor>0000FF</linkcolor>
+<width>1009</width>
+<height>662</height>
+<font>
+<height>12</height>
+<facename>Arial</facename>
+</font>
+<custformelement formelemtype="radiobutton">
+<onimage customid="26208" />
+<offimage customid="26209" />
+</custformelement>
+<custformelement formelemtype="checkbox">
+<onimage customid="91442" />
+<offimage customid="91443" />
+</custformelement>
+<assignableunit id="67" parent="1" timelimitaction="continuenomessage" prereqtype="all">
+<name>A001</name>
+<lastupdated>1560839277</lastupdated>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+<effect>0</effect>
+</transitionin>
+<autype>Lesson</autype>
+<masteryscore>75</masteryscore>
+<developerid>A001-Dev</developerid>
+<description>Description of Assignable Unit</description>
+<systemid>A001</systemid>
+<systemidint>1</systemidint>
+<cmi5moveon>0</cmi5moveon>
+<action id="89144" parent="67" on="show">
+<name>OnShowMute_or_Unmute_media</name>
+<lastupdated>1537455954</lastupdated>
+<actionitem actiontaken="muteFLVmedia" subtargetobject="30965">
+<conditionlist all_of_the_conditions="true">
+<condition varcondition="89025" comparecondition="equal">
+<stringcomparison>0</stringcomparison>
+</condition>
+</conditionlist>
+<browserWnd />
+</actionitem>
+<elseactionitem actiontaken="unmuteFLVmedia" subtargetobject="30965">
+<browserWnd />
+</elseactionitem>
+</action>
+<action id="89339" parent="67" on="show">
+<name>OnShowShow_soundOn_or_soundOff</name>
+<lastupdated>1537456013</lastupdated>
+<actionitem actiontaken="show" target="object" targetobject="2012">
+<conditionlist all_of_the_conditions="true">
+<condition varcondition="89025" comparecondition="equal">
+<stringcomparison>1</stringcomparison>
+</condition>
+</conditionlist>
+<browserWnd />
+</actionitem>
+<elseactionitem actiontaken="show" target="object" targetobject="1733">
+<browserWnd />
+</elseactionitem>
+</action>
+<chapter id="148" parent="67">
+<name>INTRO</name>
+<lastupdated>1560839277</lastupdated>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+<effect>0</effect>
+</transitionin>
+<page id="104266" parent="148">
+<name>COURSE INTRO</name>
+<lastupdated>1560839277</lastupdated>
+<respprops>
+<phoneportrait>
+<page>
+<height>560</height>
+</page>
+</phoneportrait>
+<tabletlandscape>
+<page>
+<height>662</height>
+</page>
+</tabletlandscape>
+<phonelandscape>
+<page>
+<height>527</height>
+</page>
+</phonelandscape>
+<tabletportrait>
+<page>
+<height>527</height>
+</page>
+</tabletportrait>
+</respprops>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+<effect>0</effect>
+</transitionin>
+<webwidget id="122321" parent="104266" ontop="false" fixed="false" proportional="false" webwidgettype="webwnd" webwndsubtype="website">
+<name>Web Window</name>
+<lastupdated>1560839277</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>21</y>
+</point>
+<size>
+<cx>1008</cx>
+<cy>608</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<opacity>100</opacity>
+<webwidgetvalue>https://siyingdu.github.io/System%20Training2/story_html5.html</webwidgetvalue>
+</webwidget>
+</page>
+</chapter>
+</assignableunit>
+</title>
+</objectdata>
+</lectoratitle>
