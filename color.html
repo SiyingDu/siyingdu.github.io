@@ -104,9 +104,15 @@ fetch('nav.html')
         <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10">
          <h2>Example:</h2>
-         <object width="800" height="600" data="ColorWheel/story.swf">
-        <param name="movie" value="your-file.swf">
-        <!-- Replace 'your-file.swf' with the path to your SWF file -->
+           <!-- Embed SWF file using <object> -->
+        <object width="800" height="600" data="ColorWheel/story.swf">
+        <param name="movie" value="ColorWheel/story.swf">
+        <p>Your browser does not support Flash. You need to enable Flash or use an alternative viewer.</p>
+        </object>
+
+    <!-- Optionally, you can also use <embed> -->
+    <embed src="ColorWheel/story.swf" width="800" height="600" type="application/x-shockwave-flash">
+
        </object>
        </div>
      </div>
