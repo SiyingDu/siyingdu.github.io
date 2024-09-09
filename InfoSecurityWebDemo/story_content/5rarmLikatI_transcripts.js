@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":669,"text":"You may be wondering what would happen if you click\r\non a link in a phishing email."},{"start":4468,"text":"Let's continue to learn more."},{"start":6932,"text":"Malware, short for malicious software, is any software\r\ndesigned to harm or exploit any computing device or"},{"start":13371,"text":"network."},{"start":14041,"text":"It can be in the form of viruses, worms, trojans,\r\nspyware, adware, and more."},{"start":20513,"text":"Hackers will use malware by spreading it to your\r\nmachine through a link in an email or an attachment"},{"start":25594,"text":"for example, and can then steal data or spy on you\r\nand record your actions."}]}]};
+    window.globalLoadJsAsset('story_content/5rarmLikatI_transcripts.js', JSON.stringify(data));
+})();

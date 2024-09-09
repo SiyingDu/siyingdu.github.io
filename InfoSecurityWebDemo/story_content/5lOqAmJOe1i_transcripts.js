@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":669,"text":"So next time those pesky hackers try to disguise themselves\r\nas Mark in your inbox, you'll know to spot those red"},{"start":7710,"text":"flags."},{"start":8428,"text":"And you'd never click on any links or attachments\r\nwithin these emails, right?"},{"start":13162,"text":"We're counting on you!"},{"start":16089,"text":"Now let's look at how you can report phishing emails\r\nto our information security department."},{"start":21794,"text":"If you suspect a phishing email in your inbox, do\r\nnot click on any links or attachments."},{"start":27032,"text":"Send the email to our security team by clicking on\r\nthe phish alarm button."},{"start":31070,"text":"It's important you use this button as it'll provide\r\nus a lot of information about your email to help us"},{"start":36429,"text":"stop the phishing email spread throughout our entire\r\norganization."}]}]};
+    window.globalLoadJsAsset('story_content/5lOqAmJOe1i_transcripts.js', JSON.stringify(data));
+})();

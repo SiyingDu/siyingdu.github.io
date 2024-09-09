@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":669,"text":"You may be wondering, what has changed and happened\r\nin cybersecurity since our last training?"},{"start":5960,"text":"We'd like to start by sharing with you some latest\r\ntrends on cybersecurity you may not know."},{"start":11070,"text":"According to IBM, the global average cost of a data\r\nbreach in 2023 was 4.45 million dollars, and phishing"},{"start":19390,"text":"is the most expensive initial attack vector, costing\r\n4.9 million dollars in 2023."},{"start":26184,"text":"According to the National Cyber Security Alliance,\r\nover 60% of businesses that experience a cyber attack"},{"start":32584,"text":"close their doors within six months."},{"start":34870,"text":"According to a study supported by Apple, over 80%\r\nof data breaches involved data stored in the cloud,"},{"start":41247,"text":"These statistics show the importance of being aware\r\nof the risks and potential consequences."}]}]};
+    window.globalLoadJsAsset('story_content/5cCVOCYNKgt_transcripts.js', JSON.stringify(data));
+})();

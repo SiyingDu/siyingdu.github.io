@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":669,"text":"It's easy to overlook the importance of physical security."},{"start":3747,"text":"But as we increasingly work remotely, it's crucial\r\nto understand the risks and responsibilities that"},{"start":8987,"text":"come with it."},{"start":10732,"text":"In this section, we will explore the importance of\r\nphysical security in the workplace, and when working"},{"start":16092,"text":"remotely."},{"start":18435,"text":"Physical documents, devices, or personal items can\r\nbe lost or stolen when dedicated attention to physical"},{"start":24235,"text":"security is not given."},{"start":25690,"text":"Also, devices that are left unattended could have\r\nthe system or data living on them be compromised,"},{"start":31610,"text":"especially if the device is left unlocked!"},{"start":36025,"text":"This is a photo of a workstation in DV's New York\r\noffice."},{"start":39392,"text":"Can you spot the potential risks?"}]}]};
+    window.globalLoadJsAsset('story_content/5xlI1vKYL6L_transcripts.js', JSON.stringify(data));
+})();
