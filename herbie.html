@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Herbie, an AI-powered chatbot — Case Study</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:#fff;color:#1A1A18;max-width:793px;margin:0 auto}
+nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:0.5px solid rgba(0,0,0,0.1)}
+.logo{font-size:14px;font-weight:500;color:#1A1A18;text-decoration:none}
+.nav-r{display:flex;gap:20px;align-items:center}
+.back{font-size:12.5px;color:#5F5E5A;text-decoration:none;display:flex;align-items:center;gap:4px}
+.nlink{font-size:12.5px;color:#5F5E5A}
+.wrap{padding:32px}
+.hero-wrap{border-left:3px solid #1D9E75;padding-left:16px;margin-bottom:28px}
+.cats{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.cat{font-size:11px;padding:3px 10px;border-radius:20px}
+.h-title{font-size:26px;font-weight:500;color:#1A1A18;margin:0 0 4px}
+.h-sub{font-size:13.5px;color:#5F5E5A;margin:0}
+.meta-card{border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;overflow:hidden;margin-bottom:28px}
+.meta-bar{height:3px;background:#1D9E75}
+.meta-body{padding:16px 20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.meta-lbl{display:flex;align-items:center;gap:5px;margin-bottom:9px;font-size:10px;font-weight:500;color:#888780;text-transform:uppercase;letter-spacing:.05em}
+.pill{display:inline-block;font-size:11px;padding:3px 9px;border-radius:20px;margin:2px 2px}
+.pt{background:#E1F5EE;color:#085041}
+.pp{background:#EEEDFE;color:#3C3489}
+.pg{background:#F1EFE8;color:#444441}
+.sec{margin-bottom:28px}
+.sec-head{display:flex;align-items:center;gap:8px;margin-bottom:14px}
+.sec-lbl{font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.07em;color:#1D9E75}
+.sec-line{flex:1;height:0.5px;background:rgba(0,0,0,0.1)}
+.ctx-text{font-size:13px;color:#5F5E5A;line-height:1.7;margin:0 0 12px}
+.ctx-box{background:#F5F4F0;border-radius:8px;padding:12px 16px}
+.ctx-lbl{font-size:10px;font-weight:500;color:#5F5E5A;text-transform:uppercase;letter-spacing:.05em;margin:0 0 10px}
+.bullet{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}
+.dot{width:5px;height:5px;border-radius:50%;background:#1D9E75;margin-top:5px;flex-shrink:0}
+.bt{font-size:12.5px;color:#5F5E5A;margin:0;line-height:1.55}
+.phase-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center}
+.phase-card{border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;padding:14px 16px}
+.ph-badge{font-size:10px;padding:2px 8px;border-radius:20px;font-weight:500;display:inline-block;margin-bottom:10px}
+.ph-title{font-size:13px;font-weight:500;color:#1A1A18;margin:0 0 4px}
+.ph-sub{font-size:12px;color:#5F5E5A;margin:0;line-height:1.5}
+.metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.mc{background:#F5F4F0;border-radius:8px;padding:14px}
+.m-lbl{font-size:11px;color:#5F5E5A;margin:0 0 6px}
+.m-num{font-size:22px;font-weight:500;color:#1A1A18;margin:0 0 2px;line-height:1}
+.m-sub{font-size:11px;color:#888780;margin:0}
+.p2-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.p2c{border:0.5px solid rgba(0,0,0,0.1);border-radius:8px;padding:12px 14px;display:flex;gap:10px}
+.p2-icon{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.p2-name{font-size:12px;font-weight:500;color:#1A1A18;margin:0}
+.p2-desc{font-size:11px;color:#5F5E5A;margin:0}
+.b-live{font-size:10px;padding:1px 6px;background:#E1F5EE;color:#085041;border-radius:4px;font-weight:500}
+.b-ip{font-size:10px;padding:1px 6px;background:#F1EFE8;color:#5F5E5A;border-radius:4px;font-weight:500}
+.footer{border-top:0.5px solid rgba(0,0,0,0.1);padding-top:22px;margin-top:36px;display:flex;align-items:center;justify-content:space-between}
+.f-name{font-size:13px;font-weight:500;margin:0 0 3px}
+.f-sub{font-size:12px;color:#5F5E5A;margin:0}
+.btn{font-family:inherit;font-size:12px;padding:7px 16px;background:transparent;border:0.5px solid rgba(0,0,0,0.18);border-radius:8px;cursor:pointer;color:#1A1A18}
+.btn:hover{background:#F5F4F0}
+#gate{position:fixed;inset:0;background:rgba(28,28,26,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;z-index:9999;padding:24px}
+#gate.hidden{display:none}
+.gc{background:#fff;border-radius:16px;padding:40px 36px;width:100%;max-width:360px;text-align:center;box-shadow:0 32px 80px rgba(0,0,0,0.5)}
+.gi{width:48px;height:48px;background:#1D9E75;border-radius:12px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center}
+.gi svg{width:22px;height:22px;stroke:#fff;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.gn{font-size:18px;font-weight:500;color:#1A1A18;margin:0 0 6px}
+.gs{font-size:13px;color:#888780;margin:0 0 28px;line-height:1.6}
+.ginput{width:100%;padding:11px 14px;border:0.5px solid rgba(0,0,0,0.18);border-radius:8px;font-size:14px;font-family:inherit;box-sizing:border-box;outline:none;color:#1A1A18;transition:border-color .15s}
+.ginput:focus{border-color:#1D9E75;box-shadow:0 0 0 3px rgba(29,158,117,0.15)}
+.gerr{font-size:12px;color:#E24B4A;margin:8px 0 0;min-height:16px;text-align:left}
+.gbtn{width:100%;padding:11px;background:#1D9E75;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;font-family:inherit;margin-top:16px}
+.gbtn:hover{background:#0F6E56}
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="gc">
+    <div class="gi"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+    <p class="gn">Siying Du</p>
+    <p class="gs">Enter your company name<br>to continue.</p>
+    <input class="ginput" type="text" id="gate-pwd" placeholder="Company name" autocomplete="off">
+    <p class="gerr" id="gate-err"></p>
+    <button class="gbtn" onclick="gateCheck()">Enter portfolio</button>
+  </div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo">Siying Du</a>
+  <div class="nav-r">
+    <a href="index.html" class="back"><i class="ti ti-arrow-left" style="font-size:13px" aria-hidden="true"></i> Back to work</a>
+    
+    <span class="nlink" onclick="location.href='https://www.linkedin.com/in/sydu/'">About</span>
+    <button class="btn" onclick="location.href='mailto:sydu21517@gmail.com'">Contact</button>
+  </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero-wrap">
+    <div class="cats">
+      <span class="cat pt">AI Enablement</span>
+      <span class="cat pp">Knowledge Systems</span>
+      <span class="cat pg">Conversational UX</span>
+    </div>
+    <p class="h-title">Herbie</p>
+    <p class="h-sub">DoubleVerify· AI-Powered HR Knowledge & Enablement Chatbot</p>
+  </div>
+
+  <div class="meta-card">
+    <div class="meta-bar"></div>
+    <div class="meta-body">
+      <div>
+        <div class="meta-lbl"><i class="ti ti-user" style="font-size:12px" aria-hidden="true"></i> Role</div>
+        <span class="pill pt">Systems architect</span>
+        <span class="pill pt">Content governance</span>
+        <span class="pill pt">Conversational UX</span>
+        <span class="pill pt">User testing</span>
+      </div>
+      <div>
+        <div class="meta-lbl"><i class="ti ti-layout-grid" style="font-size:12px" aria-hidden="true"></i> Scope</div>
+        <span class="pill pp">Benefits</span>
+        <span class="pill pp">HRBP Support</span>
+        <span class="pill pp">L&D</span>
+        <span class="pill pp">Performance</span>
+        <span class="pill pp">HR Ops</span>
+        <span class="pill pp">Talent</span>
+      </div>
+      <div>
+        <div class="meta-lbl"><i class="ti ti-stack-2" style="font-size:12px" aria-hidden="true"></i> Stack</div>
+        <span class="pill pg"><i class="ti ti-brand-slack" style="font-size:11px;vertical-align:-1px" aria-hidden="true"></i> Slack</span>
+        <span class="pill pg">Workato AI</span>
+        <span class="pill pg">Google Drive</span>
+        <span class="pill pg">LMS</span>
+        <span class="pill pg">Workday</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head"><span class="sec-lbl">Context</span><div class="sec-line"></div></div>
+    <p class="ctx-text">HR knowledge existed — but employees couldn't find it. Most defaulted to asking a human, creating a bottleneck that cost 6+ hours of HR capacity every week and left global offices without support.</p>
+    <div class="ctx-box">
+      <p class="ctx-lbl">The problem — three dimensions</p>
+      <div class="bullet"><div class="dot"></div><p class="bt">HR partners spent 6+ hrs/week (15% of capacity) answering the same repeatable questions</p></div>
+      <div class="bullet"><div class="dot"></div><p class="bt">Employees in global offices had no local HR — waiting across time zones for basic answers</p></div>
+      <div class="bullet" style="margin-bottom:0"><div class="dot"></div><p class="bt">Critical moments — onboarding, compliance deadlines, open enrollment — passed without the right information reaching the right person</p></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head"><span class="sec-lbl">Phase 1 decisions</span><div class="sec-line"></div></div>
+
+    <div style="border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;overflow:hidden;margin-bottom:10px">
+      <div style="padding:12px 16px;background:#F5F4F0;display:flex;align-items:center;gap:10px;border-bottom:0.5px solid rgba(0,0,0,0.08)">
+        <span style="font-size:10px;font-weight:500;background:#1A1A18;color:#fff;padding:2px 8px;border-radius:4px">Decision 1</span>
+        <p style="font-size:13px;font-weight:500;color:#1A1A18;margin:0">Content governance — boundaries before capability</p>
+      </div>
+      <div style="padding:14px 16px;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div>
+          <p style="font-size:10px;font-weight:500;color:#1D9E75;text-transform:uppercase;letter-spacing:.05em;margin:0 0 10px">Herbie answers</p>
+          <span class="pill pt">Benefits & Total Rewards</span>
+          <span class="pill pt">HRBP Support</span>
+          <span class="pill pt">L&D</span>
+          <span class="pill pt">Performance Management</span>
+          <span class="pill pt">HR Operations</span>
+          <span class="pill pt">Talent Acquisition</span>
+        </div>
+        <div>
+          <p style="font-size:10px;font-weight:500;color:#E24B4A;text-transform:uppercase;letter-spacing:.05em;margin:0 0 10px">Herbie does not answer</p>
+          <div class="bullet"><div style="width:5px;height:5px;border-radius:50%;background:#E24B4A;margin-top:5px;flex-shrink:0"></div><p class="bt">Individual judgment calls — accommodations, disciplinary matters</p></div>
+          <div class="bullet"><div style="width:5px;height:5px;border-radius:50%;background:#E24B4A;margin-top:5px;flex-shrink:0"></div><p class="bt">Legally sensitive queries — employment law interpretation</p></div>
+          <div class="bullet" style="margin-bottom:10px"><div style="width:5px;height:5px;border-radius:50%;background:#E24B4A;margin-top:5px;flex-shrink:0"></div><p class="bt">Personal employee records beyond process confirmation</p></div>
+          <p style="font-size:11.5px;color:#5F5E5A;line-height:1.5;margin:0;font-style:italic">When Herbie hits a boundary, it routes to the right HR partner — the handoff is designed, not accidental.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;overflow:hidden;margin-bottom:10px">
+      <div style="padding:12px 16px;background:#F5F4F0;display:flex;align-items:center;gap:10px;border-bottom:0.5px solid rgba(0,0,0,0.08)">
+        <span style="font-size:10px;font-weight:500;background:#1A1A18;color:#fff;padding:2px 8px;border-radius:4px">Decision 2</span>
+        <p style="font-size:13px;font-weight:500;color:#1A1A18;margin:0">Knowledge architecture — one interface, multiple sources</p>
+      </div>
+      <div style="padding:14px 16px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+        <div style="background:#F5F4F0;border-radius:8px;padding:12px">
+          <div style="width:28px;height:28px;border-radius:6px;background:#E1F5EE;display:flex;align-items:center;justify-content:center;margin-bottom:8px">
+            <i class="ti ti-brand-google-drive" style="font-size:14px;color:#085041" aria-hidden="true"></i>
+          </div>
+          <p style="font-size:12px;font-weight:500;color:#1A1A18;margin:0 0 4px">Google Drive</p>
+          <p style="font-size:11px;color:#5F5E5A;margin:0;line-height:1.5">Re-indexing on update — knowledge stays current, not static</p>
+        </div>
+        <div style="background:#F5F4F0;border-radius:8px;padding:12px">
+          <div style="width:28px;height:28px;border-radius:6px;background:#E1F5EE;display:flex;align-items:center;justify-content:center;margin-bottom:8px">
+            <i class="ti ti-school" style="font-size:14px;color:#085041" aria-hidden="true"></i>
+          </div>
+          <p style="font-size:12px;font-weight:500;color:#1A1A18;margin:0 0 4px">LMS content</p>
+          <p style="font-size:11px;color:#5F5E5A;margin:0;line-height:1.5">Surfaces the module directly — not just a description</p>
+        </div>
+        <div style="background:#F5F4F0;border-radius:8px;padding:12px">
+          <div style="width:28px;height:28px;border-radius:6px;background:#E1F5EE;display:flex;align-items:center;justify-content:center;margin-bottom:8px">
+            <i class="ti ti-file-text" style="font-size:14px;color:#085041" aria-hidden="true"></i>
+          </div>
+          <p style="font-size:12px;font-weight:500;color:#1A1A18;margin:0 0 4px">Process docs</p>
+          <p style="font-size:11px;color:#5F5E5A;margin:0;line-height:1.5">Curated before ingestion — clean source, not AI compensation</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;overflow:hidden">
+      <div style="padding:12px 16px;background:#F5F4F0;display:flex;align-items:center;gap:10px;border-bottom:0.5px solid rgba(0,0,0,0.08)">
+        <span style="font-size:10px;font-weight:500;background:#1A1A18;color:#fff;padding:2px 8px;border-radius:4px">Decision 3</span>
+        <p style="font-size:13px;font-weight:500;color:#1A1A18;margin:0">Conversational UX — answer quality and guided navigation</p>
+      </div>
+      <div style="padding:14px 16px;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div>
+          <p style="font-size:10px;font-weight:500;color:#888780;text-transform:uppercase;letter-spacing:.05em;margin:0 0 10px">Every response follows this structure</p>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="display:flex;align-items:flex-start;gap:8px">
+              <span style="width:20px;height:20px;border-radius:50%;background:#1D9E75;color:#fff;font-size:10px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0">1</span>
+              <p style="font-size:12px;color:#1A1A18;margin:0;line-height:1.5;padding-top:2px">Direct answer — lead with what the employee needs to know</p>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:8px">
+              <span style="width:20px;height:20px;border-radius:50%;background:#1D9E75;color:#fff;font-size:10px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0">2</span>
+              <p style="font-size:12px;color:#1A1A18;margin:0;line-height:1.5;padding-top:2px">Supporting context — relevant policy or background</p>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:8px">
+              <span style="width:20px;height:20px;border-radius:50%;background:#1D9E75;color:#fff;font-size:10px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0">3</span>
+              <p style="font-size:12px;color:#1A1A18;margin:0;line-height:1.5;padding-top:2px">Action button — routes directly to Workday task, LMS module, or policy doc</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p style="font-size:10px;font-weight:500;color:#888780;text-transform:uppercase;letter-spacing:.05em;margin:0 0 10px">Tone calibration by domain</p>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:14px">
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:11px;padding:2px 8px;background:#FAEEDA;color:#633806;border-radius:4px;flex-shrink:0;white-space:nowrap">Benefits / leave</span>
+              <p style="font-size:11.5px;color:#5F5E5A;margin:0">Warmer, empathetic</p>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:11px;padding:2px 8px;background:#F1EFE8;color:#444441;border-radius:4px;flex-shrink:0;white-space:nowrap">Operations</span>
+              <p style="font-size:11.5px;color:#5F5E5A;margin:0">Concise, step-oriented</p>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:11px;padding:2px 8px;background:#EEEDFE;color:#3C3489;border-radius:4px;flex-shrink:0;white-space:nowrap">Escalation</span>
+              <p style="font-size:11.5px;color:#5F5E5A;margin:0">Proactive handoff to HR partner</p>
+            </div>
+          </div>
+          <p style="font-size:10px;font-weight:500;color:#888780;text-transform:uppercase;letter-spacing:.05em;margin:0 0 8px">User testing focus</p>
+          <div class="bullet" style="margin-bottom:4px"><div style="width:4px;height:4px;border-radius:50%;background:#888780;margin-top:6px;flex-shrink:0"></div><p style="font-size:11.5px;color:#5F5E5A;margin:0;line-height:1.5">Correct but unhelpfully framed answers</p></div>
+          <div class="bullet" style="margin-bottom:4px"><div style="width:4px;height:4px;border-radius:50%;background:#888780;margin-top:6px;flex-shrink:0"></div><p style="font-size:11.5px;color:#5F5E5A;margin:0;line-height:1.5">Escalation paths that felt abrupt</p></div>
+          <div class="bullet"><div style="width:4px;height:4px;border-radius:50%;background:#888780;margin-top:6px;flex-shrink:0"></div><p style="font-size:11.5px;color:#5F5E5A;margin:0;line-height:1.5">Action buttons routing to wrong destinations</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head"><span class="sec-lbl">Approach</span><div class="sec-line"></div></div>
+    <div class="phase-grid">
+      <div class="phase-card">
+        <span class="ph-badge" style="background:#E1F5EE;color:#085041">Phase 1 — shipped</span>
+        <p class="ph-title">Reactive Q&A</p>
+        <p class="ph-sub">RAG-based AI knowledge system in Slack — instant, trustworthy HR answers 24/7 globally</p>
+      </div>
+      <i class="ti ti-arrow-right" style="font-size:18px;color:#888780" aria-hidden="true"></i>
+      <div class="phase-card">
+        <span class="ph-badge" style="background:#F1EFE8;color:#5F5E5A">Phase 2 — in rollout</span>
+        <p class="ph-title">Proactive delivery</p>
+        <p class="ph-sub">Right information at the right lifecycle moment — delivered before employees need to ask</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head"><span class="sec-lbl">Impact</span><div class="sec-line"></div></div>
+    <div class="metric-grid">
+      <div class="mc"><p class="m-lbl">Time saved</p><p class="m-num">6+</p><p class="m-sub">hours per week</p></div>
+      <div class="mc"><p class="m-lbl">HR capacity freed</p><p class="m-num">15%</p><p class="m-sub">of weekly workload</p></div>
+      <div class="mc"><p class="m-lbl">Availability</p><p class="m-num">24/7</p><p class="m-sub">global offices</p></div>
+      <div class="mc"><p class="m-lbl">HR domains</p><p class="m-num">6</p><p class="m-sub">covered</p></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head"><span class="sec-lbl">Phase 2 rollout</span><div class="sec-line"></div></div>
+    <div class="p2-grid">
+      <div class="p2c">
+        <div class="p2-icon" style="background:#E1F5EE"><i class="ti ti-brand-zapier" style="font-size:14px;color:#085041" aria-hidden="true"></i></div>
+        <div><div style="display:flex;align-items:center;gap:6px;margin-bottom:3px"><p class="p2-name">Workday onboarding</p><span class="b-live">Live</span></div><p class="p2-desc">Surfaces tasks directly in Slack</p></div>
+      </div>
+      <div class="p2c">
+        <div class="p2-icon" style="background:#E1F5EE"><i class="ti ti-calendar-check" style="font-size:14px;color:#085041" aria-hidden="true"></i></div>
+        <div><div style="display:flex;align-items:center;gap:6px;margin-bottom:3px"><p class="p2-name">30-60-90 check-ins</p><span class="b-live">Live</span></div><p class="p2-desc">Automated milestone nudges</p></div>
+      </div>
+      <div class="p2c">
+        <div class="p2-icon" style="background:#E1F5EE"><i class="ti ti-book" style="font-size:14px;color:#085041" aria-hidden="true"></i></div>
+        <div><div style="display:flex;align-items:center;gap:6px;margin-bottom:3px"><p class="p2-name">Learning nudges</p><span class="b-live">Live</span></div><p class="p2-desc">Compliance + development alerts</p></div>
+      </div>
+      <div class="p2c">
+        <div class="p2-icon" style="background:#F1EFE8"><i class="ti ti-target" style="font-size:14px;color:#5F5E5A" aria-hidden="true"></i></div>
+        <div><div style="display:flex;align-items:center;gap:6px;margin-bottom:3px"><p class="p2-name">Performance nudges</p><span class="b-ip">In progress</span></div><p class="p2-desc">Goals, feedback, 1:1 reminders</p></div>
+      </div>
+      <div class="p2c">
+        <div class="p2-icon" style="background:#F1EFE8"><i class="ti ti-home-move" style="font-size:14px;color:#5F5E5A" aria-hidden="true"></i></div>
+        <div><div style="display:flex;align-items:center;gap:6px;margin-bottom:3px"><p class="p2-name">Relocation guidance</p><span class="b-ip">In progress</span></div><p class="p2-desc">Docs + checklists on demand</p></div>
+      </div>
+      <div class="p2c">
+        <div class="p2-icon" style="background:#F1EFE8"><i class="ti ti-heart-handshake" style="font-size:14px;color:#5F5E5A" aria-hidden="true"></i></div>
+        <div><div style="display:flex;align-items:center;gap:6px;margin-bottom:3px"><p class="p2-name">Open enrollment</p><span class="b-ip">In progress</span></div><p class="p2-desc">Benefits guidance + deadlines</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div><p class="f-name">Siying Du— Learning Architect</p><p class="f-sub">7–10 years building AI-enabled learning systems at scale</p></div>
+    <a href="index.html"><button class="btn">← All projects</button></a>
+  </div>
+
+</div>
+
+<script>
+function gateCheck(){var i=document.getElementById('gate-pwd'),e=document.getElementById('gate-err');if(i.value.toLowerCase()==='stripe'){document.getElementById('gate').classList.add('hidden');sessionStorage.setItem('portfolio-auth','true')}else if(i.value===''){e.textContent='Please enter your company name.'}else{e.textContent="Hmm, that doesn't match. Please try again.";i.value='';i.focus()}}
+document.getElementById('gate-pwd').addEventListener('keydown',function(e){if(e.key==='Enter')gateCheck()});
+if(sessionStorage.getItem('portfolio-auth')==='true'){document.getElementById('gate').classList.add('hidden')}
+</script>
+
+</body>
+</html>

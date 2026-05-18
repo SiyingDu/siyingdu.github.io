@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps Champion Program — Case Study</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:#fff;color:#1A1A18;max-width:793px;margin:0 auto}
+nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:0.5px solid rgba(0,0,0,0.1)}
+.logo{font-size:14px;font-weight:500;color:#1A1A18;text-decoration:none}
+.nav-r{display:flex;gap:20px;align-items:center}
+.back{font-size:12.5px;color:#5F5E5A;text-decoration:none;display:flex;align-items:center;gap:4px}
+.nlink{font-size:12.5px;color:#5F5E5A}
+.wrap{padding:32px}
+.hero-wrap{border-left:3px solid #534AB7;padding-left:16px;margin-bottom:28px}
+.cats{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.cat{font-size:11px;padding:3px 10px;border-radius:20px}
+.h-title{font-size:26px;font-weight:500;color:#1A1A18;margin:0 0 4px}
+.h-sub{font-size:13.5px;color:#5F5E5A;margin:0}
+.meta-card{border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;overflow:hidden;margin-bottom:28px}
+.meta-bar{height:3px;background:#534AB7}
+.meta-body{padding:16px 20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.meta-lbl{display:flex;align-items:center;gap:5px;margin-bottom:9px;font-size:10px;font-weight:500;color:#888780;text-transform:uppercase;letter-spacing:.05em}
+.pill{display:inline-block;font-size:11px;padding:3px 9px;border-radius:20px;margin:2px 2px}
+.pt{background:#E1F5EE;color:#085041}
+.pp{background:#EEEDFE;color:#3C3489}
+.pg{background:#F1EFE8;color:#444441}
+.sec{margin-bottom:28px}
+.sec-head{display:flex;align-items:center;gap:8px;margin-bottom:14px}
+.sec-lbl{font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.07em;color:#534AB7}
+.sec-line{flex:1;height:0.5px;background:rgba(0,0,0,0.1)}
+.ctx-text{font-size:13px;color:#5F5E5A;line-height:1.7;margin:0 0 12px}
+.ctx-box{background:#F5F4F0;border-radius:8px;padding:12px 16px}
+.ctx-lbl{font-size:10px;font-weight:500;color:#5F5E5A;text-transform:uppercase;letter-spacing:.05em;margin:0 0 10px}
+.bullet{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}
+.dot{width:5px;height:5px;border-radius:50%;background:#534AB7;margin-top:5px;flex-shrink:0}
+.bt{font-size:12.5px;color:#5F5E5A;margin:0;line-height:1.55}
+.dec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.dec-card{border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;padding:16px}
+.dec-num{font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.05em;color:#888780;margin:0 0 8px}
+.dec-title{font-size:13px;font-weight:500;color:#1A1A18;margin:0 0 6px}
+.dec-text{font-size:12px;color:#5F5E5A;line-height:1.55;margin:0}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.pillar-card{border:0.5px solid rgba(0,0,0,0.1);border-radius:8px;padding:14px}
+.pillar-icon{width:32px;height:32px;border-radius:8px;background:#EEEDFE;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.pillar-name{font-size:12.5px;font-weight:500;color:#1A1A18;margin:0 0 3px}
+.pillar-sub{font-size:11px;color:#5F5E5A;margin:0}
+.outcome-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.oc{background:#F5F4F0;border-radius:8px;padding:14px}
+.o-lbl{font-size:11px;color:#5F5E5A;margin:0 0 6px}
+.o-val{font-size:15px;font-weight:500;color:#1A1A18;margin:0 0 3px;line-height:1.3}
+.o-sub{font-size:11px;color:#888780;margin:0}
+.footer{border-top:0.5px solid rgba(0,0,0,0.1);padding-top:22px;margin-top:36px;display:flex;align-items:center;justify-content:space-between}
+.f-name{font-size:13px;font-weight:500;margin:0 0 3px}
+.f-sub{font-size:12px;color:#5F5E5A;margin:0}
+.btn{font-family:inherit;font-size:12px;padding:7px 16px;background:transparent;border:0.5px solid rgba(0,0,0,0.18);border-radius:8px;cursor:pointer;color:#1A1A18}
+.btn:hover{background:#F5F4F0}
+#gate{position:fixed;inset:0;background:rgba(28,28,26,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;z-index:9999;padding:24px}
+#gate.hidden{display:none}
+.gc{background:#fff;border-radius:16px;padding:40px 36px;width:100%;max-width:360px;text-align:center;box-shadow:0 32px 80px rgba(0,0,0,0.5)}
+.gi{width:48px;height:48px;background:#534AB7;border-radius:12px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center}
+.gi svg{width:22px;height:22px;stroke:#fff;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.gn{font-size:18px;font-weight:500;color:#1A1A18;margin:0 0 6px}
+.gs{font-size:13px;color:#888780;margin:0 0 28px;line-height:1.6}
+.ginput{width:100%;padding:11px 14px;border:0.5px solid rgba(0,0,0,0.18);border-radius:8px;font-size:14px;font-family:inherit;box-sizing:border-box;outline:none;color:#1A1A18;transition:border-color .15s}
+.ginput:focus{border-color:#534AB7;box-shadow:0 0 0 3px rgba(83,74,183,0.15)}
+.gerr{font-size:12px;color:#E24B4A;margin:8px 0 0;min-height:16px;text-align:left}
+.gbtn{width:100%;padding:11px;background:#534AB7;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;font-family:inherit;margin-top:16px}
+.gbtn:hover{background:#3C3489}
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="gc">
+    <div class="gi"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+    <p class="gn">Siying Du</p>
+    <p class="gs">Enter your company name<br>to continue.</p>
+    <input class="ginput" type="text" id="gate-pwd" placeholder="Company name" autocomplete="off">
+    <p class="gerr" id="gate-err"></p>
+    <button class="gbtn" onclick="gateCheck()">Enter portfolio</button>
+  </div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo">Siying Du</a>
+  <div class="nav-r">
+    <a href="index.html" class="back"><i class="ti ti-arrow-left" style="font-size:13px" aria-hidden="true"></i> Back to work</a>
+    <span class="nlink" onclick="location.href='https://www.linkedin.com/in/sydu/'">About</span>
+    <button class="btn" onclick="location.href='mailto:sydu21517@gmail.com'">Contact</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero-wrap">
+    <div class="cats">
+      <span class="cat pp">Knowledge Systems</span>
+      <span class="cat pt">In-platform Design</span>
+      <span class="cat pg">Data Tracking</span>
+    </div>
+    <p class="h-title">DevOps Champion Program</p>
+    <p class="h-sub">DoubleVerify · Confluence Knowledge Ecosystem</p>
+  </div>
+
+  <div class="meta-card">
+    <div class="meta-bar"></div>
+    <div class="meta-body">
+      <div>
+        <div class="meta-lbl"><i class="ti ti-user" style="font-size:12px" aria-hidden="true"></i> Role</div>
+        <span class="pill pt">Learning experience designer</span>
+        <span class="pill pt">Systems architect</span>
+        <span class="pill pt">In-platform designer</span>
+      </div>
+      <div>
+        <div class="meta-lbl"><i class="ti ti-layout-grid" style="font-size:12px" aria-hidden="true"></i> Scope</div>
+        <span class="pill pp">Content structure</span>
+        <span class="pill pp">Learner experience</span>
+        <span class="pill pp">Data tracking</span>
+        <span class="pill pp">Admin tooling</span>
+        <span class="pill pp">Peer learning</span>
+      </div>
+      <div>
+        <div class="meta-lbl"><i class="ti ti-stack-2" style="font-size:12px" aria-hidden="true"></i> Platforms</div>
+        <span class="pill pg">Confluence</span>
+        <span class="pill pg">LMS</span>
+        <span class="pill pg">Google Drive</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head"><span class="sec-lbl">Context</span><div class="sec-line"></div></div>
+    <p class="ctx-text">DevOps knowledge existed but wasn't working. Documentation lived in Google Drive folders nobody opened, policy guides were plain text with no structure, and LMS content was disconnected from where engineers actually worked.</p>
+    <div class="ctx-box">
+      <p class="ctx-lbl">The problem — three layers</p>
+      <div class="bullet"><div class="dot"></div><p class="bt">Knowledge siloed in Google Drive — no searchable structure, no completion tracking</p></div>
+      <div class="bullet"><div class="dot"></div><p class="bt">Policy and setup documents in plain text — no hierarchy, no sequencing, no peer learning</p></div>
+      <div class="bullet" style="margin-bottom:0"><div class="dot"></div><p class="bt">LMS content existed but was disconnected from where engineers worked day-to-day</p></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head"><span class="sec-lbl">Three architectural decisions</span><div class="sec-line"></div></div>
+    <div class="dec-grid">
+      <div class="dec-card">
+        <p class="dec-num">Decision 1</p>
+        <p class="dec-title">Platform: Confluence as the hub</p>
+        <p class="dec-text">Built the knowledge ecosystem where engineers already work — not where the LMS wants them to go. LMS content embedded directly inside Confluence pages.</p>
+      </div>
+      <div class="dec-card">
+        <p class="dec-num">Decision 2</p>
+        <p class="dec-title">Experience: Progressive + role-aware</p>
+        <p class="dec-text">Foundation → Intermediate → Advanced sequencing per pillar. Non-linear navigation so seniors skip to advanced content without a separate document.</p>
+      </div>
+      <div class="dec-card">
+        <p class="dec-num">Decision 3</p>
+        <p class="dec-title">Data: Manager-visible tracking</p>
+        <p class="dec-text">Connected LMS completions to manager-facing progress dashboards — shifting from a passive content library to an accountable development pathway.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head"><span class="sec-lbl">Program pillars</span><div class="sec-line"></div></div>
+    <div class="pillar-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="ti ti-git-branch" style="font-size:16px;color:#534AB7" aria-hidden="true"></i></div>
+        <p class="pillar-name">CI/CD</p>
+        <p class="pillar-sub">Pipeline basics, branch strategy, testing standards</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="ti ti-server" style="font-size:16px;color:#534AB7" aria-hidden="true"></i></div>
+        <p class="pillar-name">Infrastructure</p>
+        <p class="pillar-sub">Environment setup, IaC, cloud architecture</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="ti ti-activity" style="font-size:16px;color:#534AB7" aria-hidden="true"></i></div>
+        <p class="pillar-name">Monitoring</p>
+        <p class="pillar-sub">Observability, alerting, incident response</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="ti ti-shield-check" style="font-size:16px;color:#534AB7" aria-hidden="true"></i></div>
+        <p class="pillar-name">Security</p>
+        <p class="pillar-sub">Compliance, access control, vulnerability management</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="ti ti-rocket" style="font-size:16px;color:#534AB7" aria-hidden="true"></i></div>
+        <p class="pillar-name">Release Management</p>
+        <p class="pillar-sub">Deployment strategies, rollback, versioning</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="ti ti-users" style="font-size:16px;color:#534AB7" aria-hidden="true"></i></div>
+        <p class="pillar-name">Peer Learning</p>
+        <p class="pillar-sub">Community infrastructure, shared practices</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head"><span class="sec-lbl">Outcomes</span><div class="sec-line"></div></div>
+    <div class="outcome-grid">
+      <div class="oc">
+        <p class="o-lbl">From</p>
+        <p class="o-val">Fragmented Google Drive folders</p>
+        <p class="o-sub">No structure, no tracking</p>
+      </div>
+      <div class="oc">
+        <p class="o-lbl">To</p>
+        <p class="o-val">Branded Confluence ecosystem</p>
+        <p class="o-sub">Sequential, interactive, tracked</p>
+      </div>
+      <div class="oc">
+        <p class="o-lbl">Engineers</p>
+        <p class="o-val">Navigate by role + level</p>
+        <p class="o-sub">Foundation → Advanced, non-linear</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div><p class="f-name">Siying Du — Learning Architect</p><p class="f-sub">7–10 years building AI-enabled learning systems at scale</p></div>
+    <a href="index.html"><button class="btn">← All projects</button></a>
+  </div>
+
+</div>
+
+<script>
+function gateCheck(){var i=document.getElementById('gate-pwd'),e=document.getElementById('gate-err');if(i.value.toLowerCase()==='stripe'){document.getElementById('gate').classList.add('hidden');sessionStorage.setItem('portfolio-auth','true')}else if(i.value===''){e.textContent='Please enter your company name.'}else{e.textContent="Hmm, that doesn't match. Please try again.";i.value='';i.focus()}}
+document.getElementById('gate-pwd').addEventListener('keydown',function(e){if(e.key==='Enter')gateCheck()});
+if(sessionStorage.getItem('portfolio-auth')==='true'){document.getElementById('gate').classList.add('hidden')}
+</script>
+
+</body>
+</html>
