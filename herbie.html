@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Herbie, an AI-powered chatbot — Case Study</title>
+<title>Herbie — Case Study</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -71,6 +71,73 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
 .gerr{font-size:12px;color:#E24B4A;margin:8px 0 0;min-height:16px;text-align:left}
 .gbtn{width:100%;padding:11px;background:#1D9E75;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;font-family:inherit;margin-top:16px}
 .gbtn:hover{background:#0F6E56}
+
+.img-frame{margin-bottom:20px}
+.img-frame img{width:100%;border-radius:12px;display:block;border:0.5px solid rgba(0,0,0,0.08)}
+.img-ph{height:220px;background:#F5F4F0;border-radius:12px;border:1.5px dashed rgba(0,0,0,0.15);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;margin-bottom:20px}
+.img-ph-icon{width:36px;height:36px;border-radius:8px;background:#E1F5EE;display:flex;align-items:center;justify-content:center}
+.img-ph-label{font-size:12px;color:#888780;text-align:center;line-height:1.5}
+.img-ph-hint{font-size:11px;color:#B4B2A9;font-family:monospace}
+.img-cap{font-size:11.5px;color:#888780;text-align:center;margin:6px 0 0;line-height:1.5}
+.img-2col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.img-2col .img-frame{margin-bottom:0}
+.img-2col .img-ph{margin-bottom:0}
+
+/* Image showcase — dark breakout sections */
+.img-showcase{
+  margin:0 -32px 28px;
+  background:#1C1C1A;
+  padding:24px 32px 28px;
+}
+.showcase-lbl{
+  font-size:10px;
+  font-weight:500;
+  color:#1D9E75;
+  text-transform:uppercase;
+  letter-spacing:.07em;
+  margin:0 0 14px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.showcase-lbl::after{
+  content:'';
+  flex:1;
+  height:0.5px;
+  background:rgba(255,255,255,0.08);
+}
+.showcase-inner{
+  border-radius:12px;
+  overflow:hidden;
+  border:0.5px solid rgba(255,255,255,0.1);
+  background:rgba(255,255,255,0.04);
+}
+.showcase-inner img{
+  width:100%;
+  display:block;
+}
+.showcase-cap{
+  font-size:12px;
+  color:#888780;
+  margin:10px 0 0;
+  line-height:1.5;
+  text-align:center;
+}
+.showcase-2col{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.showcase-2col .showcase-cap{
+  text-align:left;
+}
+
+.showcase{background:#063D31;border-radius:12px;padding:20px;margin-bottom:24px}
+.showcase-lbl{font-size:10px;font-weight:500;color:#5DCAA5;text-transform:uppercase;letter-spacing:.07em;margin:0 0 14px;display:flex;align-items:center;gap:7px}
+.showcase-lbl::before{content:'';width:6px;height:6px;border-radius:50%;background:#1D9E75;flex-shrink:0}
+.showcase img{width:100%;border-radius:8px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.5)}
+.showcase-cap{font-size:11px;color:rgba(255,255,255,0.4);text-align:center;margin:10px 0 0;line-height:1.5}
+.showcase-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 </style>
 </head>
 <body>
@@ -90,10 +157,8 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
   <a href="index.html" class="logo">Siying Du</a>
   <div class="nav-r">
     <a href="index.html" class="back"><i class="ti ti-arrow-left" style="font-size:13px" aria-hidden="true"></i> Back to work</a>
-    
-    <span class="nlink" onclick="location.href='https://www.linkedin.com/in/sydu/'">About</span>
+     <span class="nlink" onclick="location.href='https://www.linkedin.com/in/sydu/'">About</span>
     <button class="btn" onclick="location.href='mailto:sydu21517@gmail.com'">Contact</button>
-  </div>
   </div>
 </nav>
 
@@ -105,8 +170,11 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
       <span class="cat pp">Knowledge Systems</span>
       <span class="cat pg">Conversational UX</span>
     </div>
-    <p class="h-title">Herbie</p>
-    <p class="h-sub">DoubleVerify· AI-Powered HR Knowledge & Enablement Chatbot</p>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px">
+      <img src="images/herbie-icon.png" alt="Herbie mascot" style="width:52px;height:52px;border-radius:12px;object-fit:contain;background:#F5F4F0;padding:4px">
+      <p class="h-title" style="margin:0">Herbie</p>
+    </div>
+    <p class="h-sub">DoubleVerify · AI-Powered HR Knowledge & Enablement Chatbot</p>
   </div>
 
   <div class="meta-card">
@@ -137,6 +205,15 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
         <span class="pill pg">Workday</span>
       </div>
     </div>
+  </div>
+
+
+  <div class="img-showcase">
+    <p class="showcase-lbl">Herbie — in action</p>
+    <div class="showcase-inner">
+      <img src="images/herbie-checkin-new-hire.png" alt="Herbie sending a Just Checking In 30-day new hire message in Slack with branded green header and action button">
+    </div>
+    <p class="showcase-cap">30-day new hire check-in — proactive Slack message with milestone checklist and action button, delivered without any manual HR tracking</p>
   </div>
 
   <div class="sec">
@@ -256,6 +333,16 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
     </div>
   </div>
 
+
+
+  <div class="img-showcase">
+    <p class="showcase-lbl">Manager onboarding — Workday integration</p>
+    <div class="showcase-inner">
+      <img src="images/herbie-onboarding.png" alt="Herbie Get Day One Ready manager onboarding Slack message with Workday task checklist and Done action buttons">
+    </div>
+    <p class="showcase-cap">Get Day One Ready — Workday onboarding tasks surfaced in Slack before Day 1, with completion buttons that update Workday directly</p>
+  </div>
+
   <div class="sec">
     <div class="sec-head"><span class="sec-lbl">Approach</span><div class="sec-line"></div></div>
     <div class="phase-grid">
@@ -269,6 +356,24 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
         <span class="ph-badge" style="background:#F1EFE8;color:#5F5E5A">Phase 2 — in rollout</span>
         <p class="ph-title">Proactive delivery</p>
         <p class="ph-sub">Right information at the right lifecycle moment — delivered before employees need to ask</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="img-showcase" style="margin-top:28px">
+    <p class="showcase-lbl">Phase 2 — proactive delivery in action</p>
+    <div class="showcase-2col">
+      <div>
+        <div class="showcase-inner">
+          <img src="images/herbie-onboarding.png" alt="Get Day One Ready manager onboarding message in Slack">
+        </div>
+        <p class="showcase-cap">Manager onboarding — Workday tasks surfaced in Slack before Day 1</p>
+      </div>
+      <div>
+        <div class="showcase-inner">
+          <img src="images/herbie-checkin-manager.png" alt="30-day check-in reminder for managers in Slack">
+        </div>
+        <p class="showcase-cap">30-day manager check-in — automated nudge with Workday tips and compliance reminders</p>
       </div>
     </div>
   </div>
@@ -314,7 +419,7 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
   </div>
 
   <div class="footer">
-    <div><p class="f-name">Siying Du— Learning Architect</p><p class="f-sub">7–10 years building AI-enabled learning systems at scale</p></div>
+    <div><p class="f-name">Siying Du — Learning Architect</p><p class="f-sub">7–10 years building AI-enabled learning systems at scale</p></div>
     <a href="index.html"><button class="btn">← All projects</button></a>
   </div>
 
