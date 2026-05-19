@@ -8,45 +8,145 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:#fff;color:#1A1A18;max-width:793px;margin:0 auto}
+
+/* Nav */
 nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:0.5px solid rgba(0,0,0,0.1)}
 .logo{font-size:14px;font-weight:500;color:#1A1A18;text-decoration:none}
 .nav-r{display:flex;gap:20px;align-items:center}
 .back{font-size:12.5px;color:#5F5E5A;text-decoration:none;display:flex;align-items:center;gap:4px}
 .nlink{font-size:12.5px;color:#5F5E5A}
+.btn{font-family:inherit;font-size:12px;padding:7px 16px;background:transparent;border:0.5px solid rgba(0,0,0,0.18);border-radius:8px;cursor:pointer;color:#1A1A18}
+.btn:hover{background:#F5F4F0}
+
+/* Wrap */
 .wrap{padding:32px}
+
+/* Hero */
 .hero-wrap{border-left:3px solid #1D9E75;padding-left:16px;margin-bottom:28px}
 .cats{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
 .cat{font-size:11px;padding:3px 10px;border-radius:20px}
-.h-title{font-size:26px;font-weight:500;color:#1A1A18;margin:0 0 4px}
-.h-sub{font-size:13.5px;color:#5F5E5A;margin:0}
-.meta-card{border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;overflow:hidden;margin-bottom:28px}
-.meta-bar{height:3px;background:#1D9E75}
-.meta-body{padding:16px 20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.meta-lbl{display:flex;align-items:center;gap:5px;margin-bottom:9px;font-size:10px;font-weight:500;color:#888780;text-transform:uppercase;letter-spacing:.05em}
+
+/* Pills */
 .pill{display:inline-block;font-size:11px;padding:3px 9px;border-radius:20px;margin:2px 2px}
 .pt{background:#E1F5EE;color:#085041}
 .pp{background:#EEEDFE;color:#3C3489}
 .pg{background:#F1EFE8;color:#444441}
+
+/* Metadata card */
+.meta-card{border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;overflow:hidden;margin-bottom:28px}
+.meta-bar{height:3px;background:#1D9E75}
+.meta-body{padding:16px 20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.meta-lbl{display:flex;align-items:center;gap:5px;margin-bottom:9px;font-size:10px;font-weight:500;color:#888780;text-transform:uppercase;letter-spacing:.05em}
+
+/* Sections */
 .sec{margin-bottom:28px}
 .sec-head{display:flex;align-items:center;gap:8px;margin-bottom:14px}
 .sec-lbl{font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.07em;color:#1D9E75}
 .sec-line{flex:1;height:0.5px;background:rgba(0,0,0,0.1)}
+
+/* Context */
 .ctx-text{font-size:13px;color:#5F5E5A;line-height:1.7;margin:0 0 12px}
 .ctx-box{background:#F5F4F0;border-radius:8px;padding:12px 16px}
 .ctx-lbl{font-size:10px;font-weight:500;color:#5F5E5A;text-transform:uppercase;letter-spacing:.05em;margin:0 0 10px}
 .bullet{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}
 .dot{width:5px;height:5px;border-radius:50%;background:#1D9E75;margin-top:5px;flex-shrink:0}
 .bt{font-size:12.5px;color:#5F5E5A;margin:0;line-height:1.55}
+
+/* Showcase images */
+.showcase{background:#063D31;border-radius:12px;padding:20px;margin-bottom:24px}
+.showcase-lbl{font-size:10px;font-weight:500;color:#5DCAA5;text-transform:uppercase;letter-spacing:.07em;margin:0 0 14px;display:flex;align-items:center;gap:7px}
+.showcase-lbl::before{content:'';width:6px;height:6px;border-radius:50%;background:#1D9E75;flex-shrink:0}
+.showcase img{width:100%;border-radius:8px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.5)}
+.showcase-cap{font-size:11px;color:rgba(255,255,255,0.4);text-align:center;margin:10px 0 0;line-height:1.5}
+.showcase-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+/* Architecture flow */
+.flow-wrap{background:#0A1F17;border-radius:12px;padding:20px}
+.flow-col{display:flex;flex-direction:column;align-items:center;gap:0}
+.flow-box{border-radius:8px;padding:10px 16px;font-size:12.5px;font-weight:500;color:#F1EFE8;text-align:center;width:100%;max-width:320px}
+.flow-box.neutral{background:rgba(255,255,255,0.08)}
+.flow-box.teal{background:rgba(29,158,117,0.2);border:0.5px solid rgba(29,158,117,0.4)}
+.flow-note{font-size:11px;color:rgba(255,255,255,0.4);font-weight:400;display:block;margin-top:3px}
+.flow-arr{color:rgba(255,255,255,0.25);font-size:18px;line-height:1.8;text-align:center}
+.flow-gate{border:1.5px solid #1D9E75;border-radius:8px;padding:8px 20px;font-size:13px;font-weight:500;color:#5DCAA5;text-align:center;background:rgba(29,158,117,0.08);width:fit-content;margin:0 auto}
+.flow-branch{display:grid;grid-template-columns:1fr 1px 1fr;margin-top:0}
+.branch-divider{background:rgba(255,255,255,0.1)}
+.branch-side{padding:12px 16px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px}
+.branch-lbl{font-size:11px;font-weight:500;padding:2px 10px;border-radius:4px;display:inline-block}
+.branch-lbl.yes{background:rgba(29,158,117,0.3);color:#5DCAA5}
+.branch-lbl.no{background:rgba(127,119,221,0.3);color:#AFA9EC}
+.branch-box{border-radius:8px;padding:10px 14px;font-size:12px;font-weight:500;color:#F1EFE8;text-align:center;width:100%}
+.branch-box.teal{background:rgba(29,158,117,0.3);border:0.5px solid #1D9E75}
+.branch-box.purple{background:rgba(127,119,221,0.25);border:0.5px solid rgba(127,119,221,0.5)}
+.branch-note{font-size:11px;color:rgba(255,255,255,0.35);text-align:center;line-height:1.4}
+
+/* Comparison cards */
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.compare-card{border-radius:12px;overflow:hidden;border:0.5px solid rgba(0,0,0,0.1)}
+.compare-head{padding:12px 16px}
+.compare-head-title{font-size:13px;font-weight:500;color:#F1EFE8;margin:0 0 2px}
+.compare-head-sub{font-size:11px;color:rgba(255,255,255,0.6);margin:0}
+.compare-body{padding:14px 16px;display:flex;flex-direction:column;gap:12px}
+.compare-row-lbl{font-size:10px;font-weight:500;color:#888780;text-transform:uppercase;letter-spacing:.04em;margin:0 0 2px}
+.compare-row-val{font-size:12.5px;color:#1A1A18;margin:0;line-height:1.4}
+
+/* Insight callout */
+.insight{border-left:3px solid #1D9E75;padding:12px 16px;background:#F5F4F0;border-radius:0 8px 8px 0;margin-bottom:16px}
+.insight-text{font-size:13px;color:#1A1A18;line-height:1.6;margin:0;font-style:italic}
+
+/* Example cards */
+.example-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.example-card{border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;overflow:hidden}
+.example-q{background:#F5F4F0;padding:12px 16px;border-bottom:0.5px solid rgba(0,0,0,0.08)}
+.example-q-label{font-size:11px;color:#888780;margin:0 0 4px}
+.example-q-text{font-size:13px;font-weight:500;color:#1A1A18;margin:0;font-style:italic}
+.example-body{padding:12px 16px}
+.example-result-lbl{display:flex;align-items:center;gap:6px;margin-bottom:8px}
+.example-desc{font-size:12px;color:#5F5E5A;margin:0;line-height:1.55}
+
+/* Decision cards */
+.dec-wrap{border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;overflow:hidden;margin-bottom:10px}
+.dec-head{padding:12px 16px;background:#F5F4F0;display:flex;align-items:center;gap:10px;border-bottom:0.5px solid rgba(0,0,0,0.08)}
+.dec-badge{font-size:10px;font-weight:500;background:#1A1A18;color:#fff;padding:2px 8px;border-radius:4px}
+.dec-title{font-size:13px;font-weight:500;color:#1A1A18;margin:0}
+.dec-body{padding:14px 16px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.src-card{background:#F5F4F0;border-radius:8px;padding:12px}
+.src-icon{width:28px;height:28px;border-radius:6px;background:#E1F5EE;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.src-name{font-size:12px;font-weight:500;color:#1A1A18;margin:0 0 4px}
+.src-desc{font-size:11px;color:#5F5E5A;margin:0;line-height:1.5}
+.tone-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.tone-tag{font-size:11px;padding:2px 8px;border-radius:4px;flex-shrink:0;white-space:nowrap}
+.tone-val{font-size:11.5px;color:#5F5E5A;margin:0}
+.step-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:8px}
+.step-num{width:20px;height:20px;border-radius:50%;background:#1D9E75;color:#fff;font-size:10px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.step-text{font-size:12px;color:#1A1A18;margin:0;line-height:1.5;padding-top:2px}
+.test-lbl{font-size:10px;font-weight:500;color:#888780;text-transform:uppercase;letter-spacing:.05em;margin:12px 0 8px}
+.test-bullet{display:flex;align-items:flex-start;gap:6px;margin-bottom:4px}
+.test-dot{width:4px;height:4px;border-radius:50%;background:#888780;margin-top:6px;flex-shrink:0}
+.test-text{font-size:11.5px;color:#5F5E5A;margin:0;line-height:1.5}
+
+/* Scope lists */
+.scope-label{font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.05em;margin:0 0 10px}
+.red-bullet{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}
+.red-dot{width:5px;height:5px;border-radius:50%;background:#E24B4A;margin-top:5px;flex-shrink:0}
+
+/* Phase */
 .phase-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center}
 .phase-card{border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;padding:14px 16px}
 .ph-badge{font-size:10px;padding:2px 8px;border-radius:20px;font-weight:500;display:inline-block;margin-bottom:10px}
 .ph-title{font-size:13px;font-weight:500;color:#1A1A18;margin:0 0 4px}
 .ph-sub{font-size:12px;color:#5F5E5A;margin:0;line-height:1.5}
+
+/* Metrics */
 .metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
 .mc{background:#F5F4F0;border-radius:8px;padding:14px}
 .m-lbl{font-size:11px;color:#5F5E5A;margin:0 0 6px}
 .m-num{font-size:22px;font-weight:500;color:#1A1A18;margin:0 0 2px;line-height:1}
 .m-sub{font-size:11px;color:#888780;margin:0}
+
+/* Phase 2 grid */
 .p2-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .p2c{border:0.5px solid rgba(0,0,0,0.1);border-radius:8px;padding:12px 14px;display:flex;gap:10px}
 .p2-icon{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
@@ -54,11 +154,13 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
 .p2-desc{font-size:11px;color:#5F5E5A;margin:0}
 .b-live{font-size:10px;padding:1px 6px;background:#E1F5EE;color:#085041;border-radius:4px;font-weight:500}
 .b-ip{font-size:10px;padding:1px 6px;background:#F1EFE8;color:#5F5E5A;border-radius:4px;font-weight:500}
+
+/* Footer */
 .footer{border-top:0.5px solid rgba(0,0,0,0.1);padding-top:22px;margin-top:36px;display:flex;align-items:center;justify-content:space-between}
 .f-name{font-size:13px;font-weight:500;margin:0 0 3px}
 .f-sub{font-size:12px;color:#5F5E5A;margin:0}
-.btn{font-family:inherit;font-size:12px;padding:7px 16px;background:transparent;border:0.5px solid rgba(0,0,0,0.18);border-radius:8px;cursor:pointer;color:#1A1A18}
-.btn:hover{background:#F5F4F0}
+
+/* Gate */
 #gate{position:fixed;inset:0;background:rgba(28,28,26,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;z-index:9999;padding:24px}
 #gate.hidden{display:none}
 .gc{background:#fff;border-radius:16px;padding:40px 36px;width:100%;max-width:360px;text-align:center;box-shadow:0 32px 80px rgba(0,0,0,0.5)}
@@ -71,73 +173,6 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
 .gerr{font-size:12px;color:#E24B4A;margin:8px 0 0;min-height:16px;text-align:left}
 .gbtn{width:100%;padding:11px;background:#1D9E75;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;font-family:inherit;margin-top:16px}
 .gbtn:hover{background:#0F6E56}
-
-.img-frame{margin-bottom:20px}
-.img-frame img{width:100%;border-radius:12px;display:block;border:0.5px solid rgba(0,0,0,0.08)}
-.img-ph{height:220px;background:#F5F4F0;border-radius:12px;border:1.5px dashed rgba(0,0,0,0.15);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;margin-bottom:20px}
-.img-ph-icon{width:36px;height:36px;border-radius:8px;background:#E1F5EE;display:flex;align-items:center;justify-content:center}
-.img-ph-label{font-size:12px;color:#888780;text-align:center;line-height:1.5}
-.img-ph-hint{font-size:11px;color:#B4B2A9;font-family:monospace}
-.img-cap{font-size:11.5px;color:#888780;text-align:center;margin:6px 0 0;line-height:1.5}
-.img-2col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
-.img-2col .img-frame{margin-bottom:0}
-.img-2col .img-ph{margin-bottom:0}
-
-/* Image showcase — dark breakout sections */
-.img-showcase{
-  margin:0 -32px 28px;
-  background:#1C1C1A;
-  padding:24px 32px 28px;
-}
-.showcase-lbl{
-  font-size:10px;
-  font-weight:500;
-  color:#1D9E75;
-  text-transform:uppercase;
-  letter-spacing:.07em;
-  margin:0 0 14px;
-  display:flex;
-  align-items:center;
-  gap:6px;
-}
-.showcase-lbl::after{
-  content:'';
-  flex:1;
-  height:0.5px;
-  background:rgba(255,255,255,0.08);
-}
-.showcase-inner{
-  border-radius:12px;
-  overflow:hidden;
-  border:0.5px solid rgba(255,255,255,0.1);
-  background:rgba(255,255,255,0.04);
-}
-.showcase-inner img{
-  width:100%;
-  display:block;
-}
-.showcase-cap{
-  font-size:12px;
-  color:#888780;
-  margin:10px 0 0;
-  line-height:1.5;
-  text-align:center;
-}
-.showcase-2col{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-}
-.showcase-2col .showcase-cap{
-  text-align:left;
-}
-
-.showcase{background:#063D31;border-radius:12px;padding:20px;margin-bottom:24px}
-.showcase-lbl{font-size:10px;font-weight:500;color:#5DCAA5;text-transform:uppercase;letter-spacing:.07em;margin:0 0 14px;display:flex;align-items:center;gap:7px}
-.showcase-lbl::before{content:'';width:6px;height:6px;border-radius:50%;background:#1D9E75;flex-shrink:0}
-.showcase img{width:100%;border-radius:8px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.5)}
-.showcase-cap{font-size:11px;color:rgba(255,255,255,0.4);text-align:center;margin:10px 0 0;line-height:1.5}
-.showcase-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 </style>
 </head>
 <body>
@@ -145,7 +180,7 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
 <div id="gate">
   <div class="gc">
     <div class="gi"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-    <p class="gn">Siying Du</p>
+    <p class="gn">[Your Name]</p>
     <p class="gs">Enter your company name<br>to continue.</p>
     <input class="ginput" type="text" id="gate-pwd" placeholder="Company name" autocomplete="off">
     <p class="gerr" id="gate-err"></p>
@@ -154,16 +189,17 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
 </div>
 
 <nav>
-  <a href="index.html" class="logo">Siying Du</a>
+  <a href="index.html" class="logo">[Your Name]</a>
   <div class="nav-r">
     <a href="index.html" class="back"><i class="ti ti-arrow-left" style="font-size:13px" aria-hidden="true"></i> Back to work</a>
-     <span class="nlink" onclick="location.href='https://www.linkedin.com/in/sydu/'">About</span>
-    <button class="btn" onclick="location.href='mailto:sydu21517@gmail.com'">Contact</button>
+    <span class="nlink">About</span>
+    <button class="btn">Contact</button>
   </div>
 </nav>
 
 <div class="wrap">
 
+  <!-- HERO -->
   <div class="hero-wrap">
     <div class="cats">
       <span class="cat pt">AI Enablement</span>
@@ -172,11 +208,12 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
     </div>
     <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px">
       <img src="images/herbie-icon.png" alt="Herbie mascot" style="width:52px;height:52px;border-radius:12px;object-fit:contain;background:#F5F4F0;padding:4px">
-      <p class="h-title" style="margin:0">Herbie</p>
+      <p style="font-size:26px;font-weight:500;color:#1A1A18;margin:0">Herbie</p>
     </div>
-    <p class="h-sub">DoubleVerify · AI-Powered HR Knowledge & Enablement Chatbot</p>
+    <p style="font-size:13.5px;color:#5F5E5A;margin:0">[Company Name] · AI-Powered HR Knowledge & Enablement Chatbot</p>
   </div>
 
+  <!-- METADATA CARD -->
   <div class="meta-card">
     <div class="meta-bar"></div>
     <div class="meta-body">
@@ -199,7 +236,8 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
       <div>
         <div class="meta-lbl"><i class="ti ti-stack-2" style="font-size:12px" aria-hidden="true"></i> Stack</div>
         <span class="pill pg"><i class="ti ti-brand-slack" style="font-size:11px;vertical-align:-1px" aria-hidden="true"></i> Slack</span>
-        <span class="pill pg">Workato AI</span>
+        <span class="pill pg">Workato</span>
+        <span class="pill pg">Glean</span>
         <span class="pill pg">Google Drive</span>
         <span class="pill pg">LMS</span>
         <span class="pill pg">Workday</span>
@@ -207,18 +245,10 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
     </div>
   </div>
 
-
-  <div class="img-showcase">
-    <p class="showcase-lbl">Herbie — in action</p>
-    <div class="showcase-inner">
-      <img src="images/herbie-checkin-new-hire.png" alt="Herbie sending a Just Checking In 30-day new hire message in Slack with branded green header and action button">
-    </div>
-    <p class="showcase-cap">30-day new hire check-in — proactive Slack message with milestone checklist and action button, delivered without any manual HR tracking</p>
-  </div>
-
+  <!-- CONTEXT -->
   <div class="sec">
     <div class="sec-head"><span class="sec-lbl">Context</span><div class="sec-line"></div></div>
-    <p class="ctx-text">HR knowledge existed — but employees couldn't find it. Most defaulted to asking a human, creating a bottleneck that cost 6+ hours of HR capacity every week and left global offices without support.</p>
+    <p class="ctx-text">HR knowledge existed — but employees couldn't find it. Most defaulted to a Slack message to a human, creating a bottleneck that cost the HR team 6+ hours every week and left global offices without timely support.</p>
     <div class="ctx-box">
       <p class="ctx-lbl">The problem — three dimensions</p>
       <div class="bullet"><div class="dot"></div><p class="bt">HR partners spent 6+ hrs/week (15% of capacity) answering the same repeatable questions</p></div>
@@ -227,129 +257,214 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
     </div>
   </div>
 
+  <!-- HERO IMAGE -->
+  <div class="showcase">
+    <p class="showcase-lbl">In production — Herbie in Slack</p>
+    <img src="images/herbie-checkin-new-hire.png" alt="Herbie 30-day new hire check-in message in Slack with branded header and action button">
+    <p class="showcase-cap">30-day new hire check-in — branded Slack message delivered automatically at a lifecycle milestone, with checklist and action button. No manual HR outreach required.</p>
+  </div>
+
+  <!-- HOW IT WORKS -->
   <div class="sec">
-    <div class="sec-head"><span class="sec-lbl">Phase 1 decisions</span><div class="sec-line"></div></div>
+    <div class="sec-head"><span class="sec-lbl">How it works — the hybrid architecture</span><div class="sec-line"></div></div>
 
-    <div style="border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;overflow:hidden;margin-bottom:10px">
-      <div style="padding:12px 16px;background:#F5F4F0;display:flex;align-items:center;gap:10px;border-bottom:0.5px solid rgba(0,0,0,0.08)">
-        <span style="font-size:10px;font-weight:500;background:#1A1A18;color:#fff;padding:2px 8px;border-radius:4px">Decision 1</span>
-        <p style="font-size:13px;font-weight:500;color:#1A1A18;margin:0">Content governance — boundaries before capability</p>
+    <p class="ctx-text" style="margin-bottom:16px">Herbie uses a two-layer hybrid system — not a single AI model. The design choice was intentional: for high-stakes HR questions, you want the answer to be exactly what HR wrote. For everything else, you need AI flexibility.</p>
+
+    <!-- Flow diagram -->
+    <div class="flow-wrap" style="margin-bottom:16px">
+      <div class="flow-col">
+        <div class="flow-box neutral">Employee asks Herbie a question in Slack</div>
+        <div class="flow-arr">↓</div>
+        <div class="flow-box teal">Workato recipe receives the message via Slack integration</div>
+        <div class="flow-arr">↓</div>
+        <div class="flow-box teal">Pattern matching against curated FAQ database<br><span class="flow-note">keyword / phrase comparison — not ML embeddings</span></div>
+        <div class="flow-arr">↓</div>
+        <div class="flow-gate">Match found?</div>
       </div>
-      <div style="padding:14px 16px;display:grid;grid-template-columns:1fr 1fr;gap:16px">
-        <div>
-          <p style="font-size:10px;font-weight:500;color:#1D9E75;text-transform:uppercase;letter-spacing:.05em;margin:0 0 10px">Herbie answers</p>
-          <span class="pill pt">Benefits & Total Rewards</span>
-          <span class="pill pt">HRBP Support</span>
-          <span class="pill pt">L&D</span>
-          <span class="pill pt">Performance Management</span>
-          <span class="pill pt">HR Operations</span>
-          <span class="pill pt">Talent Acquisition</span>
+      <div class="flow-branch" style="margin-top:0">
+        <div class="branch-side">
+          <span class="branch-lbl yes">YES</span>
+          <div class="flow-arr" style="font-size:14px">↓</div>
+          <div class="branch-box teal">Return pre-written FAQ answer</div>
+          <p class="branch-note">Instant · HR-verified · 100% accurate when matched</p>
         </div>
-        <div>
-          <p style="font-size:10px;font-weight:500;color:#E24B4A;text-transform:uppercase;letter-spacing:.05em;margin:0 0 10px">Herbie does not answer</p>
-          <div class="bullet"><div style="width:5px;height:5px;border-radius:50%;background:#E24B4A;margin-top:5px;flex-shrink:0"></div><p class="bt">Individual judgment calls — accommodations, disciplinary matters</p></div>
-          <div class="bullet"><div style="width:5px;height:5px;border-radius:50%;background:#E24B4A;margin-top:5px;flex-shrink:0"></div><p class="bt">Legally sensitive queries — employment law interpretation</p></div>
-          <div class="bullet" style="margin-bottom:10px"><div style="width:5px;height:5px;border-radius:50%;background:#E24B4A;margin-top:5px;flex-shrink:0"></div><p class="bt">Personal employee records beyond process confirmation</p></div>
-          <p style="font-size:11.5px;color:#5F5E5A;line-height:1.5;margin:0;font-style:italic">When Herbie hits a boundary, it routes to the right HR partner — the handoff is designed, not accidental.</p>
+        <div class="branch-divider"></div>
+        <div class="branch-side">
+          <span class="branch-lbl no">NO</span>
+          <div class="flow-arr" style="font-size:14px">↓</div>
+          <div class="branch-box purple">Fall through to Glean RAG layer</div>
+          <p class="branch-note">Semantic search · AI-generated · grounded in DV documents</p>
         </div>
       </div>
     </div>
 
-    <div style="border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;overflow:hidden;margin-bottom:10px">
-      <div style="padding:12px 16px;background:#F5F4F0;display:flex;align-items:center;gap:10px;border-bottom:0.5px solid rgba(0,0,0,0.08)">
-        <span style="font-size:10px;font-weight:500;background:#1A1A18;color:#fff;padding:2px 8px;border-radius:4px">Decision 2</span>
-        <p style="font-size:13px;font-weight:500;color:#1A1A18;margin:0">Knowledge architecture — one interface, multiple sources</p>
+    <!-- Comparison -->
+    <div class="compare-grid" style="margin-bottom:16px">
+      <div class="compare-card">
+        <div class="compare-head" style="background:#1D9E75">
+          <p class="compare-head-title">Workato — Rule-based layer</p>
+          <p class="compare-head-sub">First line of response</p>
+        </div>
+        <div class="compare-body">
+          <div><p class="compare-row-lbl">Content source</p><p class="compare-row-val">HR-curated FAQ pairs — Google Sheet migrated into Workato</p></div>
+          <div><p class="compare-row-lbl">How it matches</p><p class="compare-row-val">Keyword / phrase pattern matching</p></div>
+          <div><p class="compare-row-lbl">Output</p><p class="compare-row-val">Pre-written, HR-verified static answer</p></div>
+          <div><p class="compare-row-lbl">Best for</p><p class="compare-row-val">High-stakes questions where accuracy is non-negotiable</p></div>
+        </div>
       </div>
-      <div style="padding:14px 16px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
-        <div style="background:#F5F4F0;border-radius:8px;padding:12px">
-          <div style="width:28px;height:28px;border-radius:6px;background:#E1F5EE;display:flex;align-items:center;justify-content:center;margin-bottom:8px">
-            <i class="ti ti-brand-google-drive" style="font-size:14px;color:#085041" aria-hidden="true"></i>
-          </div>
-          <p style="font-size:12px;font-weight:500;color:#1A1A18;margin:0 0 4px">Google Drive</p>
-          <p style="font-size:11px;color:#5F5E5A;margin:0;line-height:1.5">Re-indexing on update — knowledge stays current, not static</p>
+      <div class="compare-card">
+        <div class="compare-head" style="background:#534AB7">
+          <p class="compare-head-title">Glean — RAG layer</p>
+          <p class="compare-head-sub">Fallback for everything else</p>
         </div>
-        <div style="background:#F5F4F0;border-radius:8px;padding:12px">
-          <div style="width:28px;height:28px;border-radius:6px;background:#E1F5EE;display:flex;align-items:center;justify-content:center;margin-bottom:8px">
-            <i class="ti ti-school" style="font-size:14px;color:#085041" aria-hidden="true"></i>
-          </div>
-          <p style="font-size:12px;font-weight:500;color:#1A1A18;margin:0 0 4px">LMS content</p>
-          <p style="font-size:11px;color:#5F5E5A;margin:0;line-height:1.5">Surfaces the module directly — not just a description</p>
-        </div>
-        <div style="background:#F5F4F0;border-radius:8px;padding:12px">
-          <div style="width:28px;height:28px;border-radius:6px;background:#E1F5EE;display:flex;align-items:center;justify-content:center;margin-bottom:8px">
-            <i class="ti ti-file-text" style="font-size:14px;color:#085041" aria-hidden="true"></i>
-          </div>
-          <p style="font-size:12px;font-weight:500;color:#1A1A18;margin:0 0 4px">Process docs</p>
-          <p style="font-size:11px;color:#5F5E5A;margin:0;line-height:1.5">Curated before ingestion — clean source, not AI compensation</p>
+        <div class="compare-body">
+          <div><p class="compare-row-lbl">Content source</p><p class="compare-row-val">All DV documents — Confluence, Slack, Google Drive, Workday</p></div>
+          <div><p class="compare-row-lbl">How it matches</p><p class="compare-row-val">Semantic search with vector embeddings — understands meaning, not just keywords</p></div>
+          <div><p class="compare-row-lbl">Output</p><p class="compare-row-val">AI-generated answer grounded in retrieved documents</p></div>
+          <div><p class="compare-row-lbl">Best for</p><p class="compare-row-val">Edge cases, life events, nuanced questions the FAQ doesn't cover</p></div>
         </div>
       </div>
     </div>
 
-    <div style="border:0.5px solid rgba(0,0,0,0.1);border-radius:12px;overflow:hidden">
-      <div style="padding:12px 16px;background:#F5F4F0;display:flex;align-items:center;gap:10px;border-bottom:0.5px solid rgba(0,0,0,0.08)">
-        <span style="font-size:10px;font-weight:500;background:#1A1A18;color:#fff;padding:2px 8px;border-radius:4px">Decision 3</span>
-        <p style="font-size:13px;font-weight:500;color:#1A1A18;margin:0">Conversational UX — answer quality and guided navigation</p>
-      </div>
-      <div style="padding:14px 16px;display:grid;grid-template-columns:1fr 1fr;gap:16px">
-        <div>
-          <p style="font-size:10px;font-weight:500;color:#888780;text-transform:uppercase;letter-spacing:.05em;margin:0 0 10px">Every response follows this structure</p>
-          <div style="display:flex;flex-direction:column;gap:8px">
-            <div style="display:flex;align-items:flex-start;gap:8px">
-              <span style="width:20px;height:20px;border-radius:50%;background:#1D9E75;color:#fff;font-size:10px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0">1</span>
-              <p style="font-size:12px;color:#1A1A18;margin:0;line-height:1.5;padding-top:2px">Direct answer — lead with what the employee needs to know</p>
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:8px">
-              <span style="width:20px;height:20px;border-radius:50%;background:#1D9E75;color:#fff;font-size:10px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0">2</span>
-              <p style="font-size:12px;color:#1A1A18;margin:0;line-height:1.5;padding-top:2px">Supporting context — relevant policy or background</p>
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:8px">
-              <span style="width:20px;height:20px;border-radius:50%;background:#1D9E75;color:#fff;font-size:10px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0">3</span>
-              <p style="font-size:12px;color:#1A1A18;margin:0;line-height:1.5;padding-top:2px">Action button — routes directly to Workday task, LMS module, or policy doc</p>
-            </div>
-          </div>
+    <!-- Insight callout -->
+    <div class="insight" style="margin-bottom:16px">
+      <p class="insight-text">The rule-based layer acts as a guardrail. For compliance deadlines, benefits enrollment, and PTO policies — you want the answer to be exactly what HR wrote, with no AI interpretation and no hallucination risk. Glean handles everything else.</p>
+    </div>
+
+    <!-- Example scenarios -->
+    <div class="example-grid">
+      <div class="example-card">
+        <div class="example-q">
+          <p class="example-q-label">Employee asks</p>
+          <p class="example-q-text">"When is open enrollment?"</p>
         </div>
-        <div>
-          <p style="font-size:10px;font-weight:500;color:#888780;text-transform:uppercase;letter-spacing:.05em;margin:0 0 10px">Tone calibration by domain</p>
-          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:14px">
-            <div style="display:flex;align-items:center;gap:8px">
-              <span style="font-size:11px;padding:2px 8px;background:#FAEEDA;color:#633806;border-radius:4px;flex-shrink:0;white-space:nowrap">Benefits / leave</span>
-              <p style="font-size:11.5px;color:#5F5E5A;margin:0">Warmer, empathetic</p>
-            </div>
-            <div style="display:flex;align-items:center;gap:8px">
-              <span style="font-size:11px;padding:2px 8px;background:#F1EFE8;color:#444441;border-radius:4px;flex-shrink:0;white-space:nowrap">Operations</span>
-              <p style="font-size:11.5px;color:#5F5E5A;margin:0">Concise, step-oriented</p>
-            </div>
-            <div style="display:flex;align-items:center;gap:8px">
-              <span style="font-size:11px;padding:2px 8px;background:#EEEDFE;color:#3C3489;border-radius:4px;flex-shrink:0;white-space:nowrap">Escalation</span>
-              <p style="font-size:11.5px;color:#5F5E5A;margin:0">Proactive handoff to HR partner</p>
-            </div>
+        <div class="example-body">
+          <div class="example-result-lbl">
+            <span style="font-size:10px;padding:2px 7px;background:#E1F5EE;color:#085041;border-radius:4px;font-weight:500">Workato match</span>
+            <span style="font-size:11px;color:#888780">Instant — Glean not involved</span>
           </div>
-          <p style="font-size:10px;font-weight:500;color:#888780;text-transform:uppercase;letter-spacing:.05em;margin:0 0 8px">User testing focus</p>
-          <div class="bullet" style="margin-bottom:4px"><div style="width:4px;height:4px;border-radius:50%;background:#888780;margin-top:6px;flex-shrink:0"></div><p style="font-size:11.5px;color:#5F5E5A;margin:0;line-height:1.5">Correct but unhelpfully framed answers</p></div>
-          <div class="bullet" style="margin-bottom:4px"><div style="width:4px;height:4px;border-radius:50%;background:#888780;margin-top:6px;flex-shrink:0"></div><p style="font-size:11.5px;color:#5F5E5A;margin:0;line-height:1.5">Escalation paths that felt abrupt</p></div>
-          <div class="bullet"><div style="width:4px;height:4px;border-radius:50%;background:#888780;margin-top:6px;flex-shrink:0"></div><p style="font-size:11.5px;color:#5F5E5A;margin:0;line-height:1.5">Action buttons routing to wrong destinations</p></div>
+          <p class="example-desc">Keywords match the FAQ. Herbie returns the pre-written HR answer with exact dates, a link to the benefits portal, and step-by-step enrollment instructions.</p>
+        </div>
+      </div>
+      <div class="example-card">
+        <div class="example-q">
+          <p class="example-q-label">Employee asks</p>
+          <p class="example-q-text">"Can I change my health plan after my baby is born?"</p>
+        </div>
+        <div class="example-body">
+          <div class="example-result-lbl">
+            <span style="font-size:10px;padding:2px 7px;background:#EEEDFE;color:#3C3489;border-radius:4px;font-weight:500">Glean RAG</span>
+            <span style="font-size:11px;color:#888780">Contextual response</span>
+          </div>
+          <p class="example-desc">No exact FAQ match for this life event. Glean searches HR policies, benefits guides, and Workday documentation to generate a contextual, grounded answer.</p>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- PHASE 1 DECISIONS -->
+  <div class="sec">
+    <div class="sec-head"><span class="sec-lbl">Phase 1 design decisions</span><div class="sec-line"></div></div>
 
-
-  <div class="img-showcase">
-    <p class="showcase-lbl">Manager onboarding — Workday integration</p>
-    <div class="showcase-inner">
-      <img src="images/herbie-onboarding.png" alt="Herbie Get Day One Ready manager onboarding Slack message with Workday task checklist and Done action buttons">
+    <!-- Decision 1 -->
+    <div class="dec-wrap">
+      <div class="dec-head">
+        <span class="dec-badge">Decision 1</span>
+        <p class="dec-title">Content governance — boundaries before capability</p>
+      </div>
+      <div class="dec-body">
+        <div class="two-col">
+          <div>
+            <p class="scope-label" style="color:#1D9E75">Herbie answers</p>
+            <span class="pill pt">Benefits & Total Rewards</span>
+            <span class="pill pt">HRBP Support</span>
+            <span class="pill pt">L&D</span>
+            <span class="pill pt">Performance Management</span>
+            <span class="pill pt">HR Operations</span>
+            <span class="pill pt">Talent Acquisition</span>
+          </div>
+          <div>
+            <p class="scope-label" style="color:#E24B4A">Herbie does not answer</p>
+            <div class="red-bullet"><div class="red-dot"></div><p class="bt">Individual judgment calls — accommodations, disciplinary matters</p></div>
+            <div class="red-bullet"><div class="red-dot"></div><p class="bt">Legally sensitive queries — employment law interpretation</p></div>
+            <div class="red-bullet" style="margin-bottom:10px"><div class="red-dot"></div><p class="bt">Personal employee records beyond process confirmation</p></div>
+            <p style="font-size:11.5px;color:#5F5E5A;line-height:1.5;font-style:italic">When Herbie hits a boundary, it routes to the right HR partner — the handoff is designed, not accidental.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="showcase-cap">Get Day One Ready — Workday onboarding tasks surfaced in Slack before Day 1, with completion buttons that update Workday directly</p>
+
+    <!-- Decision 2 -->
+    <div class="dec-wrap">
+      <div class="dec-head">
+        <span class="dec-badge">Decision 2</span>
+        <p class="dec-title">Knowledge architecture — one interface, multiple sources</p>
+      </div>
+      <div class="dec-body">
+        <div class="three-col">
+          <div class="src-card">
+            <div class="src-icon"><i class="ti ti-brand-google-drive" style="font-size:14px;color:#085041" aria-hidden="true"></i></div>
+            <p class="src-name">Google Drive</p>
+            <p class="src-desc">HR-curated FAQ pairs migrated into Workato. Re-indexing triggered on update — answers stay current, not static.</p>
+          </div>
+          <div class="src-card">
+            <div class="src-icon"><i class="ti ti-school" style="font-size:14px;color:#085041" aria-hidden="true"></i></div>
+            <p class="src-name">LMS content</p>
+            <p class="src-desc">Surfaces modules directly via Glean — not just a description, the actual training resource at point of need.</p>
+          </div>
+          <div class="src-card">
+            <div class="src-icon"><i class="ti ti-file-text" style="font-size:14px;color:#085041" aria-hidden="true"></i></div>
+            <p class="src-name">Process docs</p>
+            <p class="src-desc">Curated before ingestion by HR partners — cleaning the source rather than relying on AI to compensate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decision 3 -->
+    <div class="dec-wrap">
+      <div class="dec-head">
+        <span class="dec-badge">Decision 3</span>
+        <p class="dec-title">Conversational UX — answer quality and guided navigation</p>
+      </div>
+      <div class="dec-body">
+        <div class="two-col">
+          <div>
+            <p class="scope-label" style="color:#888780;margin-bottom:10px">Every response follows this structure</p>
+            <div class="step-row"><span class="step-num">1</span><p class="step-text">Direct answer — lead with what the employee needs to know</p></div>
+            <div class="step-row"><span class="step-num">2</span><p class="step-text">Supporting context — relevant policy or background</p></div>
+            <div class="step-row"><span class="step-num">3</span><p class="step-text">Action button — routes to Workday task, LMS module, or policy doc</p></div>
+          </div>
+          <div>
+            <p class="scope-label" style="color:#888780;margin-bottom:10px">Tone calibration by domain</p>
+            <div class="tone-row"><span class="tone-tag" style="background:#FAEEDA;color:#633806">Benefits / leave</span><p class="tone-val">Warmer, empathetic</p></div>
+            <div class="tone-row"><span class="tone-tag" style="background:#F1EFE8;color:#444441">Operations</span><p class="tone-val">Concise, step-oriented</p></div>
+            <div class="tone-row" style="margin-bottom:0"><span class="tone-tag" style="background:#EEEDFE;color:#3C3489">Escalation</span><p class="tone-val">Proactive handoff to HR</p></div>
+            <p class="test-lbl">User testing focus</p>
+            <div class="test-bullet"><div class="test-dot"></div><p class="test-text">Technically correct but unhelpfully framed answers</p></div>
+            <div class="test-bullet"><div class="test-dot"></div><p class="test-text">Escalation paths that felt abrupt</p></div>
+            <div class="test-bullet"><div class="test-dot"></div><p class="test-text">Action buttons routing to wrong destinations</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <!-- ONBOARDING SHOWCASE -->
+  <div class="showcase">
+    <p class="showcase-lbl">Herbie in action — manager onboarding</p>
+    <img src="images/herbie-onboarding.png" alt="Herbie Get Day One Ready onboarding message with Workday task checklist and action buttons">
+    <p class="showcase-cap">Get Day One Ready — Workday onboarding tasks surfaced in Slack before a new hire's first day. Managers see their checklist, mark items done, and link directly to the Manager Onboarding Hub without leaving Slack.</p>
+  </div>
+
+  <!-- APPROACH -->
   <div class="sec">
     <div class="sec-head"><span class="sec-lbl">Approach</span><div class="sec-line"></div></div>
     <div class="phase-grid">
       <div class="phase-card">
         <span class="ph-badge" style="background:#E1F5EE;color:#085041">Phase 1 — shipped</span>
         <p class="ph-title">Reactive Q&A</p>
-        <p class="ph-sub">RAG-based AI knowledge system in Slack — instant, trustworthy HR answers 24/7 globally</p>
+        <p class="ph-sub">Hybrid Workato + Glean system in Slack — instant, trustworthy HR answers 24/7 globally</p>
       </div>
       <i class="ti ti-arrow-right" style="font-size:18px;color:#888780" aria-hidden="true"></i>
       <div class="phase-card">
@@ -360,24 +475,7 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
     </div>
   </div>
 
-  <div class="img-showcase" style="margin-top:28px">
-    <p class="showcase-lbl">Phase 2 — proactive delivery in action</p>
-    <div class="showcase-2col">
-      <div>
-        <div class="showcase-inner">
-          <img src="images/herbie-onboarding.png" alt="Get Day One Ready manager onboarding message in Slack">
-        </div>
-        <p class="showcase-cap">Manager onboarding — Workday tasks surfaced in Slack before Day 1</p>
-      </div>
-      <div>
-        <div class="showcase-inner">
-          <img src="images/herbie-checkin-manager.png" alt="30-day check-in reminder for managers in Slack">
-        </div>
-        <p class="showcase-cap">30-day manager check-in — automated nudge with Workday tips and compliance reminders</p>
-      </div>
-    </div>
-  </div>
-
+  <!-- IMPACT -->
   <div class="sec">
     <div class="sec-head"><span class="sec-lbl">Impact</span><div class="sec-line"></div></div>
     <div class="metric-grid">
@@ -388,6 +486,7 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
     </div>
   </div>
 
+  <!-- PHASE 2 -->
   <div class="sec">
     <div class="sec-head"><span class="sec-lbl">Phase 2 rollout</span><div class="sec-line"></div></div>
     <div class="p2-grid">
@@ -418,8 +517,24 @@ nav{padding:16px 32px;display:flex;align-items:center;justify-content:space-betw
     </div>
   </div>
 
+  <!-- PHASE 2 SHOWCASE -->
+  <div class="showcase">
+    <p class="showcase-lbl">Phase 2 live — proactive delivery at lifecycle moments</p>
+    <div class="showcase-grid">
+      <div>
+        <img src="images/herbie-onboarding.png" alt="Herbie Get Day One Ready manager onboarding message with Workday task checklist">
+        <p class="showcase-cap">Manager onboarding — Workday task checklist before Day 1</p>
+      </div>
+      <div>
+        <img src="images/herbie-checkin-manager.png" alt="Herbie 30-day check-in reminder for managers with compliance reminders">
+        <p class="showcase-cap">30-day manager nudge — compliance check + Workday tips</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
   <div class="footer">
-    <div><p class="f-name">Siying Du — Learning Architect</p><p class="f-sub">7–10 years building AI-enabled learning systems at scale</p></div>
+    <div><p class="f-name">[Your Name] — Learning Architect</p><p class="f-sub">7–10 years building AI-enabled learning systems at scale</p></div>
     <a href="index.html"><button class="btn">← All projects</button></a>
   </div>
 
